@@ -75,11 +75,11 @@ include '../header.php';
     $halperpage = 500;
     $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
     $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
-    $result = mysqli_query($koneksi, "SELECT * FROM f_siswa_tkj");
+    $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
-    $data = mysqli_query($koneksi, "SELECT * from f_siswa_tkj LIMIT $mulai, $halperpage ");
+    $data = mysqli_query($koneksi, "SELECT * from tb_siswa LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 
@@ -118,7 +118,7 @@ include '../header.php';
           </td>
           <td>
             <center>
-              <a type="button"  class="btn btn-info btn-sm" href="tampil.php?id=<?php echo $d['id']; ?>">Lihat</a>
+              <a type="button"  class="btn btn-info btn-sm" href="../../siswa_lihat.php?id=<?php echo $d['id']; ?>">Lihat</a>
           </td>
         </tr>
 

@@ -65,7 +65,7 @@ include '../header.php';
               $cek_tgl_lahir = $d1['tgl_lahir'];
               if ($cek_tgl_lahir) {
           ?>
-            <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d1['nik']; ?>">Cetak PDF</a>
+            <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d1['nik']; ?>">Cetak Bukti Pendaftaran</a>
           <?php } ?>
         </td>
         </td>

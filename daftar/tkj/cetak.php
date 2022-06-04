@@ -5,7 +5,7 @@ include '../../koneksi.php';
 // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
 
-$data_siswa = mysqli_query($koneksi, "select nama_siswa from f_siswa_tkj where nik='$nik'");
+$data_siswa = mysqli_query($koneksi, "select nama_siswa from tb_siswa where nik='$nik'");
 while ($d_siswa = mysqli_fetch_array($data_siswa)) {
 
   $nama_siswa = $d_siswa['nama_siswa'];
@@ -26,6 +26,14 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
 <div class="container">
 
   <div class="container-fluid">
+    <?php
+      include '../../koneksi.php';
+      // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
+
+      $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
+      $data = mysqli_query($koneksi, "select * from tb_siswa where nik='$nik'");
+      while ($d = mysqli_fetch_array($data)) {
+          ?>
     <table>
       <tr>
         <td>
@@ -35,7 +43,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
           <center><h5><b>SMK Negeri 1 Kragilan</b></h5></center>
           <center><h6><b>Bukti Pendaftaran Calon Peserta Didik Baru</b></h6></center>
           <center><h6><b>Tahun Pelajaran 2021/2022</b></h6></center>
-          <center><h6><b>Program Studi Teknik Komputer dan Jaringan</b></h6></center><br>
+          <center><h6><b>Program Studi <?= $d['kompetensi_keahlian'] ?></b></h6></center><br>
         </td>
         <td>
           <center><img style="margin-bottom: 0px; margin-top:  0px; margin-left: 70px" src="../../assets/images/logo-smkn1-cetak.png" />
@@ -43,16 +51,8 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
       </tr>
     </table>
 
-  <table class="table table-bordered">
 
-    <?php
-      include '../../koneksi.php';
-      // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 
-      $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
-      $data = mysqli_query($koneksi, "select * from f_siswa_tkj where nik='$nik'");
-      while ($d = mysqli_fetch_array($data)) {
-          ?>
 
     <table class="table table-bordered">
       <tr>
@@ -75,10 +75,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
         <td>Nama Asal Sekolah</td>
         <td><?php echo $d['asal_sekolah']; ?></td>
       </tr>
-      <tr>
-        <td>NPSN Sekolah Asal</td>
-        <td><?php echo $d['npsn_sekolah']; ?></td>
-      </tr>
+
       <tr>
         <td>NISN</td>
         <td><?php echo $d['nisn']; ?></td>
@@ -128,10 +125,6 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
         <td><?php echo $d['kelurahan']; ?></td>
       </tr>
       <tr>
-        <td>Kode POS</td>
-        <td><?php echo $d['kode_pos']; ?></td>
-      </tr>
-      <tr>
         <td>Alamat</td>
         <td><?php echo $d['alamat']; ?></td>
       </tr>
@@ -159,34 +152,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
         <td>PKH / KKS / KIP / Jamsosda</td>
         <td><?php echo $d['kip']; ?></td>
       </tr>
-      <tr>
-        <td>Nilai Rata-rata Rapor Semester 2</td>
-        <td><?php echo $d['rapor_2']; ?></td>
-      </tr>
-      <tr>
-        <td>Nilai Rata-rata Rapor Semester 3</td>
-        <td><?php echo $d['rapor_3']; ?></td>
-      </tr>
-      <tr>
-        <td>Nilai Rata-rata Rapor Semester 4</td>
-        <td><?php echo $d['rapor_4']; ?></td>
-      </tr>
-      <tr>
-        <td>Nilai Rata-rata Rapor Semester 5</td>
-        <td><?php echo $d['rapor_5']; ?></td>
-      </tr>
-      <tr>
-        <td>Nilai Rata-rata Rapor Semester 6</td>
-        <td><?php echo $d['rapor_6']; ?></td>
-      </tr>
-      <tr>
-        <td>Username Test</td>
-        <td><?php echo $d['username']; ?></td>
-      </tr>
-      <tr>
-        <td>Password Test</td>
-        <td><?php echo $d['password']; ?></td>
-      </tr>
+
       <tr>
         <td>Enkripsi </td>
         <td><?php echo $d['enk']; ?></td>

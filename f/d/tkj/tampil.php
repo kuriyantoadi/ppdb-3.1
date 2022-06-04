@@ -25,7 +25,7 @@ include '../header.php';
     <?php
       include '../../../koneksi.php';
       $id = $_GET['id'];
-      $data = mysqli_query($koneksi, "select * from f_siswa_tkj where id='$id'");
+      $data = mysqli_query($koneksi, "select * from tb_siswa where id='$id'");
       while ($d = mysqli_fetch_array($data)) {
         ?>
 
