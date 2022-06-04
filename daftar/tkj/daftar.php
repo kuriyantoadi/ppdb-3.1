@@ -15,13 +15,13 @@ include '../header.php';
             <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
           </center>
           <center>
-            <h4><b>Form Pendaftaran</b></h4>
+            <h4><b>Formulir Pendaftaran</b></h4>
           </center>
           <center>
             <h4><b>Calon Peserta Didik Baru</b></h4>
           </center>
           <center>
-            <h5><b>Tahun Pelajaran 2021/2022</b></h4>
+            <h5><b>Tahun Ajaran 2022/2023</b></h4>
           </center>
           <center>
             <h4><b>Program Studi Teknik Komputer dan Jaringan</b></h4>
@@ -37,7 +37,7 @@ include '../header.php';
     <?php include '../../alert.php' ?>
 
     <!-- <form class="form-horizontal" action="update-siswa.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()"> -->
-      <form class="form-horizontal" action="daftar_up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
+      <form class="form-horizontal" action="../daftar_up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
@@ -54,9 +54,9 @@ include '../header.php';
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Kompetensi Keahlian Ke-2 :</label>
         <div class="col-sm-6">
-          <select class="form-control" name="kompetensi_keahlian_2">
+          <select class="form-control" name="kompetensi_keahlian_2" required>
             <option value="">Pilih</option>
-            <!-- <option value="tidak memilih">Hanya 1 Kompetensi Keahlian</option> -->
+            <option value="tidak memilih">Hanya 1 Kompetensi Keahlian</option>
             <option value="Akuntansi dan Keuangan Lembaga">Akuntansi dan Keuangan Lembaga</option>
             <option value="Otomatisasi dan Tata Kelola Perkantoran">Otomatisasi dan Tata Kelola Perkantoran</option>
             <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>

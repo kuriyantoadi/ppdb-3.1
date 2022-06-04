@@ -18,13 +18,13 @@ include '../header.php';
             <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
           </center>
           <center>
-            <h4><b>Form Pendaftaran</b></h4>
+            <h4><b>Formulir Pendaftaran</b></h4>
           </center>
           <center>
             <h4><b>Calon Peserta Didik Baru</b></h4>
           </center>
           <center>
-            <h5><b>Tahun Pelajaran 2021/2022</b></h4>
+            <h5><b>Tahun Ajaran 2022/2023</b></h4>
           </center>
           <center>
             <h4><b>Program Studi Teknik Kendaraan Ringan</b></h4>
