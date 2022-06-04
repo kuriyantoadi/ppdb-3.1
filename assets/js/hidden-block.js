@@ -1,5 +1,5 @@
-  function js_block1() {
-    var x = document.getElementById("block1");
+  function block_data_siswa() {
+    var x = document.getElementById("block_data_siswa");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
