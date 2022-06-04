@@ -45,10 +45,11 @@ if ($t_val_skhun == "Data Tidak Sesuai") {
   echo "<br><span style='margin-right: 5px;' class='label label-danger'>Photo</span>";
 }
 
-$t_val_skhun = $d['val_swaphoto'];
-if ($t_val_skhun == "Data Tidak Sesuai") {
-  echo "<span style='margin-right: 5px;' class='label label-danger'>Swa Photo</span>";
+$t_val_rapor_1 = $d['val_rapor_1'];
+if ($t_val_rapor_1 == "Data Tidak Sesuai") {
+  echo "<br><span class='label label-danger'>Rapor Semester 1</span>";
 }
+
 
 $t_val_rapor_2 = $d['val_rapor_2'];
 if ($t_val_rapor_2 == "Data Tidak Sesuai") {
@@ -70,10 +71,6 @@ if ($t_val_rapor_5 == "Data Tidak Sesuai") {
   echo "<span style='margin-right: 5px;' class='label label-danger'>Rapor Semester 5</span>";
 }
 
-$t_val_rapor_6 = $d['val_rapor_6'];
-if ($t_val_rapor_6 == "Data Tidak Sesuai") {
-  echo "<br><span class='label label-danger'>Rapor Semester 6</span>";
-}
 
 $t_val_skhun = $d['val_piagam1'];
 if ($t_val_skhun == "Data Tidak Sesuai") {

@@ -567,6 +567,8 @@ while ($row = mysqli_fetch_assoc($cek_max)) {
 }
 $kode_urut =  sprintf("%04s", $no_urut);
 $no_p = "$kode_jurusan-$tgl_pendaftaran-$nisn-$kode_urut";
+$waktu_daftar = time();
+
 
 mysqli_query($koneksi, "INSERT INTO tb_siswa VALUES (
                   '',

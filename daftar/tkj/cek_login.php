@@ -12,7 +12,7 @@ $nisn = addslashes(trim($_POST['nisn']));
 $nik = addslashes(trim($_POST['nik']));
 
 // menyeleksi data admin dengan nisn dan nik yang sesuai
-$data = mysqli_query($koneksi, "select * from f_siswa_tkj where nisn='$nisn' and nik='$nik'");
+$data = mysqli_query($koneksi, "select * from tb_siswa where nisn='$nisn' and nik='$nik'");
 
 // menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($data);
@@ -25,14 +25,16 @@ if ($cek > 0) {
     if ($login['kompetensi_keahlian']=="Teknik Komputer dan Jaringan") {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
+        $_SESSION['kode_jurusan'] = "03";
+
         header("location:dashboard.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {
-        // echo "gagal1";
-        header("location:index.php?pesan=gagal1");
+        echo "gagal1";
+        // header("location:index.php?pesan=gagal1");
     }
 } else {
-    // echo "gagal2";
-    header("location:index.php?pesan=gagal");
+    echo "gagal2";
+    // header("location:index.php?pesan=gagal");
 }
