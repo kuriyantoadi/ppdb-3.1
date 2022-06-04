@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <script src="../assets/js/bootstrap.min.js"></script>
 
-  <script type="../text/javascript" src="../assets/js/jquery-latest.js"></script>
-  <script type="../text/javascript" src="../assets/js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery-latest.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.tablesorter.min.js"></script>
 </head>
 <body>

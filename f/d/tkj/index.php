@@ -79,7 +79,7 @@ include '../header.php';
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
-    $data = mysqli_query($koneksi, "SELECT * from tb_siswa LIMIT $mulai, $halperpage ");
+    $data = mysqli_query($koneksi, "SELECT * from tb_siswa ORDER BY nisn DESC LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 
