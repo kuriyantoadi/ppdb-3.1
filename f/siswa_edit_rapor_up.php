@@ -29,11 +29,13 @@ if ($_SESSION['status']=="akl") {
 
 
 $id = $_POST['id'];
-$rapor_2 = $_POST['rapor_2'];
-$rapor_3 = $_POST['rapor_3'];
-$rapor_4 = $_POST['rapor_4'];
-$rapor_5 = $_POST['rapor_5'];
-$rapor_6 = $_POST['rapor_6'];
+
+$sem1_agama = mysql_real_escape_string($_POST['sem1_agama']);
+$sem1_b_indo = mysql_real_escape_string($_POST['$sem1_b_indo']);
+$sem1_mtk = mysql_real_escape_string($_POST['$sem1_mtk']);
+$sem1_ipa = mysql_real_escape_string($_POST['$sem1_ipa']);
+$sem1_b_ing = mysql_real_escape_string($_POST['$sem1_b_ing']);
+
 
 $rapor_edit = mysqli_query($koneksi, "UPDATE f_siswa_tkj SET
           rapor_2='$rapor_2',
@@ -47,6 +49,6 @@ $rapor_edit = mysqli_query($koneksi, "UPDATE f_siswa_tkj SET
 
 
 if ($rapor_edit) {
-  header("location:tampil.php?id=$id&pesan=edit_rapor");
+  // header("location:tampil.php?id=$id&pesan=edit_rapor");
 }
 echo "edit rapor gagal";

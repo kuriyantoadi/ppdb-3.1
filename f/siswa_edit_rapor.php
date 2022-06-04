@@ -53,7 +53,7 @@ include 'header.php';
 
   <a style="margin-right: 10px; margin-bottom: 20px" type="button" class="btn btn-danger btn-md" href="siswa_lihat.php?id=<?= $id ?>">Kembali</a>
   <table class="table table-bordered">
-    <form class="" action="siswa_edit_rapor.php" method="post">
+    <form class="" action="siswa_edit_rapor_up.php" method="post">
       <tr>
         <td colspan="2">
           <h5><b>Nama Siswa : <?= $d['nama_siswa'] ?></b></h5>
@@ -70,6 +70,7 @@ include 'header.php';
         <td>
           <h3><b>Semester 1<b></h3>
           <b>Agama
+            <input type="hidden" name="id" value="<?= $d['id'] ?>">
             <input class="form-control" type="number" name="sem1_agama" value="<?= $d['sem1_agama'] ?>">
             Bahasa Indonesia
             <input class="form-control" type="number" name="sem1_b_indo" value="<?= $d['sem1_b_indo'] ?>">

@@ -23,7 +23,6 @@ $kode_jur = mysql_real_escape_string($_GET['kode_jur']);
 // $id = $_GET['id'];
 // $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 
-$kode_jur = mysql_real_escape_string($_GET['kode_jur']);
 
 echo $kode_jur;
 
