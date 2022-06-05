@@ -30,7 +30,7 @@ if ($_SESSION['status']=="akl") {
 
 // $id = mysql_real_escape_string($_POST['id']);
 $id = isset($_POST['id']) ? abs((int) $_POST['id']) :0;
-echo $id;
+// echo $id;
 //semester 1
 $sem1_agama = isset($_POST['sem1_agama']) ? abs((int) $_POST['sem1_agama']) :0;
 $sem1_b_indo = isset($_POST['sem1_b_indo']) ? abs((int) $_POST['sem1_b_indo']) :0;
