@@ -674,4 +674,4 @@ mysqli_query($koneksi, "INSERT INTO tb_siswa VALUES (
 
 
 // node_id=<?php echo $d['node_id'];
- // header("location:cetak.php?nik=$nik");
+ header("location:$kode_jur/cetak.php?nik=$nik");
