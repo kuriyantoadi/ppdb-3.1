@@ -446,7 +446,7 @@
       <label class="control-label col-sm-2">Apakah anda bertindik (bagi laki-laki) </label>
       <div class="col-sm-3">
         <select name="bertindik" class="form-control" required>
-          <option value="<?= $d['bertindik'] ?>">Pilihan Awal | <?= $d['bertindik'] ?></option>
+          <option value="">Pilih</option>
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
           <option value="Perempuan">Saya Perempuan</option>
@@ -457,7 +457,7 @@
       <label class="control-label col-sm-2">Apakah anda Perokok </label>
       <div class="col-sm-3">
         <select name="perokok" class="form-control"  required>
-          <option value="<?= $d['perokok'] ?>">Pilihan Awal | <?= $d['perokok'] ?></option>
+          <option value="">Pilih</option>
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
         </select>
@@ -467,7 +467,7 @@
       <label class="control-label col-sm-2">Apakah anda pemakai Psikotropika<br>(Narkoba, Ganja dan sejenisnya) </label>
       <div class="col-sm-3">
         <select name="psikotropika" class="form-control" required>
-          <option value="<?= $d['psikotropika'] ?>">Pilihan Awal | <?= $d['psikotropika'] ?></option>
+          <option value="">Pilih</option>
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
         </select>
@@ -477,7 +477,7 @@
       <label class="control-label col-sm-2">Apakah anda bertato </label>
       <div class="col-sm-3">
         <select name="bertato" class="form-control" required>
-          <option value="<?= $d['bertato'] ?>">Pilihan Awal | <?= $d['bertato'] ?></option>
+          <option value="">Pilih</option>
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
         </select>
@@ -487,7 +487,7 @@
       <label class="control-label col-sm-2">Apakah anda peminum-minuman keras </label>
       <div class="col-sm-3">
         <select name="peminum" class="form-control" required>
-          <option value="<?= $d['peminum'] ?>">Pilihan Awal | <?= $d['peminum'] ?></option>
+          <option value="">Pilih</option>
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
         </select>
@@ -497,12 +497,11 @@
       <label class="control-label col-sm-2">Apakah anda Buta Warna </label>
       <div class="col-sm-3">
         <select name="buta_warna" class="form-control" required>
-          <option value="<?= $d['buta_warna'] ?>">Pilihan Awal | <?= $d['buta_warna'] ?></option>
+          <option value="">Pilih</option>
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
         </select>
       </div>
-    </div>
       <input type="hidden" class="form-control" value="Bukan Jurusan Teknik Pemesinan" name="tinggi_badan" required>
 
     </div>

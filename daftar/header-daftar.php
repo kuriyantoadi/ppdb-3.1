@@ -25,34 +25,3 @@
 </head>
 
 <body>
-
-  <div class="container">
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <center><img style="margin-top: 25px;" src="../../assets/images/logo-banten.png" />
-        </div>
-        <div class="col-md-6">
-          <center>
-            <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
-          </center>
-          <center>
-            <h4><b>Data Pendaftaran</b></h4>
-          </center>
-          <center>
-            <h4><b>Calon Peserta Didik Baru</b></h4>
-          </center>
-          <center>
-            <h5><b>Tahun Ajaran 2022/2023</b></h4>
-          </center>
-          <center>
-            <h4><b><?= $kompetensi_keahlian ?></b></h4>
-          </center><br>
-          <!-- font ganti jenis -->
-        </div>
-        <div class="col-md-3">
-          <center><img style="margin-top:  25px;" class="img-fluid" src="../../assets/images/logo-smkn1.png" />
-        </div>
-      </div>
-    </div>

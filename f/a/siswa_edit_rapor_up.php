@@ -1,31 +1,11 @@
 <?php
 // koneksi database
-include '../koneksi.php';
-
+include '../../koneksi.php';
 
 session_start();
-if ($_SESSION['status']=="akl") {
-  $kompetensi_keahlian = "Akuntansi dan Keuangan Lembaga";
-  $kode_jur = "akl";
-}elseif ($_SESSION['status']=="otkp") {
-  $kompetensi_keahlian = "Otomatisasi dan Tata Kelola Perkantoran";
-  $kode_jur = "otkp";
-}elseif ($_SESSION['status']=="tkj") {
-  $kompetensi_keahlian = "Teknik Komputer dan Jaringan";
-  $kode_jur = "tkj";
-}elseif ($_SESSION['status']=="rpl") {
-  $kompetensi_keahlian = "Rekayasa Perangkat Lunak";
-  $kode_jur = "rpl";
-}elseif ($_SESSION['status']=="tkr") {
-  $kompetensi_keahlian = "Teknik Kendaraan Ringan";
-  $kode_jur = "tkr";
-}elseif ($_SESSION['status']=="tpm") {
-  $kompetensi_keahlian = "Teknik Pemesinan";
-  $kode_jur = "tpm";
-}else {
-  header("location:index.php?pesan=belum_login");
+if ($_SESSION['status']!="admin") {
+  header("location:../index.php?pesan=belum_login");
 }
-
 
 
 // $id = mysql_real_escape_string($_POST['id']);

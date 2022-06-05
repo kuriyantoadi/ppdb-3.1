@@ -14,36 +14,7 @@ $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
 $data = mysqli_query($koneksi, "select * from tb_siswa where id='$id' ");
 while ($d = mysqli_fetch_array($data)) {
 
-  switch ($d['kompetensi_keahlian']) {
-    case "Akuntansi dan Keuangan Lembaga":
-      $kode_jur = "akl";
-      $kode_jurusan = "01";
-      break;
-    case "":
-      echo "Otomatisasi dan Tata Kelola Perkantoran";
-      $kode_jur = "otkp";
-      $kode_jurusan = "02";
-
-      break;
-    case "Teknik Komputer dan Jaringan":
-      $kode_jur = "tkj";
-      $kode_jurusan = "03";
-      break;
-    case "Rekayasa Perangkat Lunak":
-      $kode_jur = "rpl";
-      $kode_jurusan = "04";
-      break;
-    case "Teknik Kendaraan Ringan":
-      $kode_jur = "tkr";
-      $kode_jurusan = "05";
-      break;
-    case "Teknik Pemesinan":
-      $kode_jur = "tpm";
-      $kode_jurusan = "06";
-      break;
-    default:
-      $kode_jur = "00";
-  }
+  include 'case_jur.php';
 
 ?>
 
@@ -69,7 +40,7 @@ while ($d = mysqli_fetch_array($data)) {
 
       <a style="margin-right: 10px;" type="button" class="btn btn-danger btn-md" href="tampil_<?= $kode_jur ?>.php">Kembali</a>
       <a style="margin-right: 10px;" type="button" class="btn btn-warning btn-md" href="siswa_reset.php?id=<?= $d['id'] ?>&kode_jur=<?= $kode_jur ?>" onclick="return confirm('Anda yakin Reset data siswa <?php echo $d['nama_siswa']; ?> ?')">Reset Data</a>
-      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../daftar/<?= $kode_jur ?>/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
+      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../../daftar/<?= $kode_jur ?>/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
 
       <h5 style="margin-top: 20px"><b>Informasi :</b></h5>
       <ol>
