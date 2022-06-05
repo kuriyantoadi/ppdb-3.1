@@ -3,7 +3,7 @@
 include '../koneksi.php';
 $nisn = $_POST['nisn'];
 $nik = $_POST['nik'];
-$kompetensi_keahlian = $_POST['kompetensi_keahlian'];
+// $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
 
 switch ($kompetensi_keahlian) {
   case "Akuntasi dan Keuangan Lembaga":
@@ -37,14 +37,14 @@ switch ($kompetensi_keahlian) {
 }
 
 // include '../cek-nisn.php';
-$cek_nisn = mysqli_query($koneksi, "SELECT nisn FROM tb_siswa where nisn='$nisn' or nik='$nik'");
-$row_nisn = mysqli_fetch_array($cek_nisn);
-// echo $row['nisn'];
-if (!empty($row_nisn)) {
-  echo "Mohon maaf nisn ada sudah terdaftar dalam sistem kami.";
-  echo "<br> Untuk info lebih lanjut hubungi Panitia di Live Chat PPDB SMK Negeri 1 Kragilan";
-  exit;
-}
+// $cek_nisn = mysqli_query($koneksi, "SELECT nisn FROM tb_siswa where nisn='$nisn' or nik='$nik'");
+// $row_nisn = mysqli_fetch_array($cek_nisn);
+// // echo $row['nisn'];
+// if (!empty($row_nisn)) {
+//   echo "Mohon maaf nisn ada sudah terdaftar dalam sistem kami.";
+//   echo "<br> Untuk info lebih lanjut hubungi Panitia di Live Chat PPDB SMK Negeri 1 Kragilan";
+//   exit;
+// }
 
 // pdf_skhun
 if ($_POST['upload']) {
@@ -403,7 +403,7 @@ if ($_POST['upload']) {
               }
           }
 
-$tgl_pendaftaran = $_POST['tgl_pendfataran'];
+$id = $_POST['id'];
 $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
 $asal_sekolah = addslashes($_POST['asal_sekolah']);
 $nisn = $_POST['nisn'];

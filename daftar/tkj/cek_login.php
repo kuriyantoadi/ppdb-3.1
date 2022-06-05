@@ -32,10 +32,10 @@ if ($cek > 0) {
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {
-        echo "gagal1";
-        // header("location:index.php?pesan=gagal1");
+        // echo "gagal1";
+        header("location:index.php?pesan=gagal");
     }
 } else {
-    echo "gagal2";
-    // header("location:index.php?pesan=gagal");
+    // echo "gagal2";
+    header("location:index.php?pesan=gagal");
 }

@@ -1,15 +1,34 @@
 <div class="container">
 
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="tgl_pendfataran" value="<?php echo date('d-m-Y'); ?>" required readonly>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Kompetensi Keahlian :</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="kompetensi_keahlian" value="<?= $d['kompetensi_keahlian'] ?>" readonly>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Kompetensi Keahlian Ke-2 :</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="kompetensi_keahlian_2" value="<?= $d['kompetensi_keahlian_2'] ?>" readonly>
+    </div>
+  </div>
 
   <?php include '../../alert.php' ?>
 
-    <form class="form-horizontal" action="../daftar_up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
+    <form class="form-horizontal" action="../form-edit-up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
     <br>
     <h4>A. IDENTITAS CALON PESERTA DIDIK</h4>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">NISN :</label>
       <div class="col-sm-6">
+        <input type="hidden" name="id" value="<?= $d['id'] ?>">
         <input type="number" class="form-control" placeholder="NISN" value="<?= $d['nisn'] ?>" name="nisn"  readonly>
         <p>Mohon maaf NISN tidak dapat diganti, jika ingin menganti bisa hubungi operator lewat live chat</p>
       </div>

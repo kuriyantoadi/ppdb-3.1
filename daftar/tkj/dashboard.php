@@ -70,29 +70,6 @@ include '../header.php';
           if (!empty($cek_tgl_lahir)) {
               include('../form-lihat-data.php');
           }else{
-          ?>
-  <form class="form-horizontal" action="edit_up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control" name="tgl_pendfataran" value="<?php echo date('d-m-Y'); ?>" required readonly>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Kompetensi Keahlian :</label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control" name="kompetensi_keahlian" value="<?= $d['kompetensi_keahlian'] ?>" readonly>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Kompetensi Keahlian Ke-2 :</label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control" name="kompetensi_keahlian_2" value="<?= $d['kompetensi_keahlian_2'] ?>" readonly>
-      </div>
-    </div>
-
-    <?php
             include '../form-edit.php';
           }
        }
