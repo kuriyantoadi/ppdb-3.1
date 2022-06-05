@@ -50,7 +50,6 @@ while ($d = mysqli_fetch_array($data)) {
 }
 
 mysqli_query($koneksi, "UPDATE tb_siswa SET
-          tgl_lahir='',
           pdf_kk='',
           pdf_kip='',
           pdf_akta='',

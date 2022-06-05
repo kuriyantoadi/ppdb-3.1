@@ -1,7 +1,7 @@
 <?php
 
 
-include '../../koneksi.php';
+include '../koneksi.php';
 // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
 
@@ -18,8 +18,8 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-  <!-- <script src="../../assets/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <!-- <script src="../assets/js/bootstrap.min.js"></script> -->
 </head>
 <body>
 
@@ -27,7 +27,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
 
   <div class="container-fluid">
     <?php
-      include '../../koneksi.php';
+      include '../koneksi.php';
       // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 
       $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
@@ -37,7 +37,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
     <table>
       <tr>
         <td>
-          <center><img style="margin-bottom: 0px; margin-top:  0px; margin-right: 70px" src="../../assets/images/logo-banten-cetak.png" />
+          <center><img style="margin-bottom: 0px; margin-top:  0px; margin-right: 70px" src="../assets/images/logo-banten-cetak.png" />
         </td>
         <td>
           <center><h5><b>SMK Negeri 1 Kragilan</b></h5></center>
@@ -46,13 +46,10 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
           <center><h6><b>Program Studi <?= $d['kompetensi_keahlian'] ?></b></h6></center><br>
         </td>
         <td>
-          <center><img style="margin-bottom: 0px; margin-top:  0px; margin-left: 70px" src="../../assets/images/logo-smkn1-cetak.png" />
+          <center><img style="margin-bottom: 0px; margin-top:  0px; margin-left: 70px" src="../assets/images/logo-smkn1-cetak.png" />
         </td>
       </tr>
     </table>
-
-
-
 
     <table class="table table-bordered">
       <tr>
@@ -200,7 +197,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
         </td>
       </tr>
     </table>
-    <img height="100px" align="right" src="../../assets/images/stampel.png" style="margin-right:  80px;"/>
+    <img height="100px" align="right" src="../assets/images/stampel.png" style="margin-right:  80px;"/>
     <center>
   <?php
       } ?>

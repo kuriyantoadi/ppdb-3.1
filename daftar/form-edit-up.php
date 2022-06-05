@@ -3,7 +3,7 @@
 include '../koneksi.php';
 $nisn = $_POST['nisn'];
 $nik = $_POST['nik'];
-// $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
+$kompetensi_keahlian = $_POST['kompetensi_keahlian'];
 
 switch ($kompetensi_keahlian) {
   case "Akuntasi dan Keuangan Lembaga":
@@ -404,7 +404,7 @@ if ($_POST['upload']) {
           }
 
 $id = $_POST['id'];
-$kompetensi_keahlian = $_POST['kompetensi_keahlian'];
+// $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
 $asal_sekolah = addslashes($_POST['asal_sekolah']);
 $nisn = $_POST['nisn'];
 $nama_siswa = addslashes($_POST['nama_siswa']);
@@ -436,7 +436,7 @@ $psikotropika = $_POST['psikotropika'];
 $bertato = $_POST['bertato'];
 $peminum = $_POST['peminum'];
 $buta_warna = $_POST['buta_warna'];
-$kompetensi_keahlian_2 = $_POST['kompetensi_keahlian_2'];
+// $kompetensi_keahlian_2 = $_POST['kompetensi_keahlian_2'];
 
 // nilai rapor_1
 $sem1_agama = $_POST['sem1_agama'];
@@ -518,20 +518,19 @@ $enk = md5($tgl_lahir);
 
 
 // $kode_jur = '01';
-$cek_max = mysqli_query($koneksi, "SELECT max(id) FROM tb_siswa");
-while ($row = mysqli_fetch_assoc($cek_max)) {
-    $max = $row['max(id)'];
-    $no_urut = $max+1;
-}
-$kode_urut =  sprintf("%04s", $no_urut);
-$no_p = "$kode_jurusan-$tgl_pendaftaran-$nisn-$kode_urut";
-$waktu_daftar = time();
+// $cek_max = mysqli_query($koneksi, "SELECT max(id) FROM tb_siswa");
+// while ($row = mysqli_fetch_assoc($cek_max)) {
+//     $max = $row['max(id)'];
+//     $no_urut = $max+1;
+// }
+// $kode_urut =  sprintf("%04s", $no_urut);
+// $no_p = "$kode_jurusan-$tgl_pendaftaran-$nisn-$kode_urut";
+// $waktu_daftar = time();
 
 
 mysqli_query($koneksi, "UPDATE tb_siswa SET
                           asal_sekolah='$asal_sekolah',
                           nama_siswa='$nama_siswa',
-                          kompetensi_keahlian_2='$kompetensi_keahlian_2'
                           jenis_kelamin='$jenis_kelamin',
                           tempat_lahir='$tempat_lahir',
                           tgl_lahir='$tgl_lahir',
@@ -595,11 +594,11 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
                           pdf_piagam2='$nisn-pdf_piagam2.pdf',
                           pdf_piagam3='$nisn-pdf_piagam3.pdf',
                           pdf_kip='$nisn-$pdf_kip_up.pdf',
+                          pdf_rapor_1='$nisn-rapor_1.pdf',
                           pdf_rapor_2='$nisn-rapor_2.pdf',
                           pdf_rapor_3='$nisn-rapor_3.pdf',
                           pdf_rapor_4='$nisn-rapor_4.pdf',
                           pdf_rapor_5='$nisn-rapor_5.pdf',
-                          pdf_rapor_6='$nisn-rapor_6.pdf',
 
                           pekerjaan_org_tua='$pekerjaan_org_tua',
                           bertindik='$bertindik',
@@ -608,6 +607,8 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
                           bertato='$bertato',
                           peminum='$peminum',
                           buta_warna='$buta_warna',
+
+                          kondisi=''
                           where id='$id'
              ") or die(mysqli_error($koneksi) );
 

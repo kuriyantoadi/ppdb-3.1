@@ -28,7 +28,7 @@ if ($cek > 0) {
         $_SESSION['kode_jurusan'] = "03";
         $_SESSION['kompetensi_keahlian'] = "Teknik Komputer dan Jaringan";
 
-        header("location:dashboard.php?nik=$nik");
+        header("location:../dashboard.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {

@@ -7,13 +7,13 @@
       <tr>
         <th width='250px'>Pendaftaran</th>
         <td>
-          <?php include('../../f/tampil-validasi.php'); ?>
+          <?php include('../f/tampil-validasi.php'); ?>
         </td>
       </tr>
       <tr>
         <th>Catatan Operator</th>
         <td>
-          <h4 style="margin-left: 10px"><?= $d1['catatan_operator']; ?></h4>
+          <h4 style="margin-left: 10px"><?= $d['catatan_operator']; ?></h4>
         </td>
       </tr>
     </table>

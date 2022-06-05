@@ -1,14 +1,14 @@
 <?php
 session_start();
-if ($_SESSION['status']!="siswa") {
+if ($_SESSION['status']!="siswa" && $_SESSION['status']!="admin" && $_SESSION['status']!="operator") {
     header("location:index.php?pesan=belum_login");
 }
 $kode_jurusan = $_SESSION['kode_jurusan'];
 $kompetensi_keahlian = $_SESSION['kompetensi_keahlian'];
 
-include '../header.php';
+include 'header.php';
 
-  include '../../koneksi.php';
+  include '../koneksi.php';
   // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 
   $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
@@ -22,7 +22,7 @@ include '../header.php';
       <td>
         <a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a>
         <?php if ($d['kondisi'] != "Reset Data") { ?>
-        <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
+        <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
         <?php } ?>
       </td>
       </td>
@@ -48,9 +48,9 @@ include '../header.php';
       <?php
         //validasi jika Reset Data kosong
         if ($d['kondisi'] == "Reset Data") {
-            include '../form-edit.php';
+            include 'form-edit.php';
         }else{
-          include ('../form-lihat-data.php');
+          include ('form-lihat-data.php');
         }
 }
 
@@ -59,4 +59,4 @@ include '../header.php';
   </form>
 </div>
 
-<?php include '../footer.php' ?>
+<?php include 'footer.php' ?>

@@ -1,4 +1,5 @@
 <div class="container">
+  <form class="form-horizontal" action="../form-edit-up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
   <div class="form-group">
     <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
@@ -21,7 +22,6 @@
 
   <?php include '../../alert.php' ?>
 
-    <form class="form-horizontal" action="../form-edit-up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
     <br>
     <h4>A. IDENTITAS CALON PESERTA DIDIK</h4>
