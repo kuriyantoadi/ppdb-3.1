@@ -54,7 +54,7 @@
                 ?>
 
           <h4 style="margin-top:  40px;">Login PPDB SMK Negeri 1 Kragilan</h5>
-          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Akuntasi dan Keuangan Lembaga</h5>
+          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Akuntansi Keuangan Lembaga</h5>
 
       </div>
 

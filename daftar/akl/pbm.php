@@ -21,15 +21,12 @@ include '../header.php';
           Mohon maaf, untuk berkas dapat dikumpulkan disekolah jika kondisi siswa sudah <b>Data Sesuai</b>. Jika masih proses mohon ditunggu
         </div>
     </div>
-
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
       <div class="col-sm-3">
         <input type='text' class="form-control" id='input' onkeyup='searchTable()'>
       </div>
-
     </div>
-
 
 
     <table class="table table-bordered table-hover" id="domainsTable">
