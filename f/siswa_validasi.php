@@ -59,5 +59,5 @@ $_SESSION['status']!="admin"
                where id='$id'
                ");
 
-    // header("location:index.php?pesan=val_berhasil");
+    header("location:siswa_lihat.php?id=$id&pesan=val_berhasil");
 }

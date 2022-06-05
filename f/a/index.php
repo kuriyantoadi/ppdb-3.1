@@ -1,3 +1,3 @@
 <?php
-header("location:rpl/index.php");
+header("location:tampil_akl.php");
  ?>

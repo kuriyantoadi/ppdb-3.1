@@ -65,7 +65,7 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
           pdf_piagam1='',
           pdf_piagam2='',
           pdf_piagam3='',
-          kondisi=''
+          kondisi='Reset Data'
            where id='$id'
            ");
 

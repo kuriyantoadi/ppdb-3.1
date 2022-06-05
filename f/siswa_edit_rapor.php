@@ -52,6 +52,7 @@ include 'header.php';
 
 
   <a style="margin-right: 10px; margin-bottom: 20px" type="button" class="btn btn-danger btn-md" href="siswa_lihat.php?id=<?= $id ?>">Kembali</a>
+  <?php include '../alert.php'; ?>
   <table class="table table-bordered">
     <form class="" action="siswa_edit_rapor_up.php" method="post">
       <tr>

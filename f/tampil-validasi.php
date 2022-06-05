@@ -13,6 +13,10 @@ if ($tampil_kondisi == "Siswa Lolos Seleksi") {
 } elseif ($tampil_kondisi == "Tidak Lolos Seleksi Adm") {
   echo "<span class='label label-danger'>Tidak Lolos Seleksi Administrasi</span>";
 
+} elseif ($tampil_kondisi == "Reset Data") {
+  echo "<span class='label label-default'>Reset Data</span>";
+
+
 } else {
   echo "<span class='label label-warning'>Tahap Pengecekan Operator</span>";
 }
