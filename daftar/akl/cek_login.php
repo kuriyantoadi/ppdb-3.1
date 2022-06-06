@@ -26,16 +26,17 @@ if ($cek > 0) {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
         $_SESSION['kode_jurusan'] = "03";
+        $_SESSION['kode_jur'] = "akl";
         $_SESSION['kompetensi_keahlian'] = "Akuntansi dan Keuangan Lembaga";
 
         header("location:../dashboard.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {
-        echo "gagal1";
-        // header("location:index.php?pesan=gagal");
+        // echo "gagal1";
+        header("location:index.php?pesan=gagal");
     }
 } else {
-    echo "gagal2";
-    // header("location:index.php?pesan=gagal");
+    // echo "gagal2";
+    header("location:index.php?pesan=gagal");
 }

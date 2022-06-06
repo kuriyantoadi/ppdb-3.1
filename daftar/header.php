@@ -29,7 +29,7 @@
   <div class="container">
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" style="margin-bottom: 30px">
         <div class="col-md-3">
           <center><img style="margin-top: 25px;" src="../assets/images/logo-banten.png" />
         </div>
@@ -52,7 +52,7 @@
           <!-- font ganti jenis -->
         </div>
         <div class="col-md-3">
-          <center><img style="margin-top:  25px;" class="img-fluid" src="../assets/images/logo-smkn1.png" />
+          <center><img style="margin-top:  25px" class="img-fluid" src="../assets/images/logo-smkn1.png" />
         </div>
       </div>
     </div>

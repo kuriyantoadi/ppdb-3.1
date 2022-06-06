@@ -6,7 +6,7 @@ $nik = $_POST['nik'];
 $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
 
 switch ($kompetensi_keahlian) {
-  case "Akuntasi dan Keuangan Lembaga":
+  case "Akuntansi dan Keuangan Lembaga":
     $kode_jur = "akl";
     $kode_jurusan = "01";
     break;
@@ -607,6 +607,7 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
                           bertato='$bertato',
                           peminum='$peminum',
                           buta_warna='$buta_warna',
+                          tinggi_badan='$tinggi_badan',
 
                           kondisi=''
                           where id='$id'
@@ -614,4 +615,4 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
 
 
 // node_id=<?php echo $d['node_id'];
- // header("location:cetak.php?nik=$nik");
+ header("location:dashboard-tinggi.php?nik=$nik");

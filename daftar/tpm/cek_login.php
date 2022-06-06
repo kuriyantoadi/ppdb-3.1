@@ -29,7 +29,7 @@ if ($cek > 0) {
         $_SESSION['kode_jur'] = "tpm";
         $_SESSION['kompetensi_keahlian'] = "Teknik Pemesinan";
 
-        header("location:../dashboard.php?nik=$nik");
+        header("location:../dashboard-tinggi.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {

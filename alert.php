@@ -64,6 +64,30 @@ if (isset($_GET['pesan'])) {
           </div>
         </div>
         ";
+      }elseif ($_GET['pesan'] == "update_berhasil") {
+         echo "
+         <div style='margin-top : 50px' class='alert alert-success alert-dismissible' role='alert'>
+           <div class='alert-message'>
+             Update Data Berhasil
+           </div>
+         </div>
+         ";
+       }
+    }elseif ($_GET['pesan'] == "gagal") {
+       echo "
+       <div style='margin-top : 50px' class='alert alert-success alert-dismissible' role='alert'>
+         <div class='alert-message'>
+           Update Data Berhasil
+         </div>
+       </div>
+       ";
+     }elseif ($_GET['pesan'] == "logout") {
+        echo "
+        <div style='margin-top : 50px' class='alert alert-success alert-dismissible' role='alert'>
+          <div class='alert-message'>
+            Update Data Berhasil
+          </div>
+        </div>
+        ";
       }
-    }
 ?>

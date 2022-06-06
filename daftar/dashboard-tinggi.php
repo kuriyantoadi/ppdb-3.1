@@ -50,9 +50,9 @@ include '../koneksi.php';
       <?php
         //validasi jika Reset Data kosong
         if ($d['kondisi'] == "Reset Data") {
-            include 'form-edit.php';
+            include 'form-edit-tinggi.php';
         }else{
-          include ('form-lihat-data.php');
+          include ('form-lihat-data-tinggi.php');
         }
       }
 

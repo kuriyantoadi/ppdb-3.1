@@ -1,5 +1,5 @@
 <div class="container">
-  <form class="form-horizontal" action="../form-edit-up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
+  <form class="form-horizontal" action="form-edit-up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
   <div class="form-group">
     <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <?php include '../../alert.php' ?>
+  <?php include '../alert.php' ?>
 
 
     <br>
@@ -87,7 +87,8 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">NIK :</label>
       <div class="col-sm-6">
-        <input type="number" class="form-control" placeholder="NIK siswa dari KK" name="nik" value="<?= $d['nik'] ?>" required>
+        <input type="number" class="form-control" placeholder="NIK siswa dari KK" name="nik" value="<?= $d['nik'] ?>" readonly required>
+        <p>Mohon maaf NIK tidak dapat diganti, jika ingin menganti bisa hubungi operator lewat live chat</p>
       </div>
     </div>
     <div class="form-group">
@@ -529,7 +530,7 @@
 
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" name="upload" value="upload" class="btn btn-default">Submit</button>
+        <button style="margin-bottom: 30px" type="submit" name="upload" value="upload" class="btn btn-default">Submit</button>
       </div>
     </div>
   </form>

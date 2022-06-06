@@ -1,4 +1,4 @@
-<div class="panel panel-success">
+<div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Status Pendaftaran</h3>
   </div>
@@ -321,62 +321,62 @@
     <tr>
       <td  width='250px'>SKHUN</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_skhun'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_skhun'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Surat Sehat dari Dokter</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_skhun'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_skhun'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Kartu Keluarga</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_kk'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kk'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Akta Kelahiran</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_akta'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_akta'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Photo</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_photo'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_photo'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
 
     <tr>
       <td>Rapor Semester 1</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_rapor_1'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Rapor Semester 2</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_rapor_2'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Rapor Semester 3</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_rapor_3'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Rapor Semester 4</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_rapor_4'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
     <tr>
       <td>Rapor Semester 5</td>
       <td>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_rapor_5'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5'] ?>" class="btn btn-primary">Download</a>
       </td>
     </tr>
 
@@ -386,7 +386,7 @@
         <?php if (empty($d['pdf_kip'])) {
           echo "File tidak ada";
         }else{ ?>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_kip'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kip'] ?>" class="btn btn-primary">Download</a>
         <?php } ?>
       </td>
     </tr>
@@ -396,7 +396,7 @@
         <?php if (empty($d['pdf_piagam1'])) {
           echo "File tidak ada";
         }else{ ?>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_piagam1'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam1'] ?>" class="btn btn-primary">Download</a>
         <?php } ?>
       </td>
     </tr>
@@ -406,7 +406,7 @@
         <?php if (empty($d['pdf_piagam2'])) {
           echo "File tidak ada";
         }else{ ?>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_piagam2'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam2'] ?>" class="btn btn-primary">Download</a>
         <?php } ?>
       </td>
     </tr>
@@ -416,7 +416,7 @@
         <?php if (empty($d['pdf_piagam2'])) {
           echo "File tidak ada";
         }else{ ?>
-        <a href="../../assets/file_upload/<?= $kode_jurusan ?>/<?= $d['pdf_piagam3'] ?>" class="btn btn-primary">Download</a>
+        <a href="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam3'] ?>" class="btn btn-primary">Download</a>
         <?php } ?>
       </td>
     </tr>
