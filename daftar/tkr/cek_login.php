@@ -22,20 +22,21 @@ $cek = mysqli_num_rows($data);
 if ($cek > 0) {
     $login = mysqli_fetch_assoc($data);
 
-    if ($login['kompetensi_keahlian']=="Akuntansi dan Keuangan Lembaga") {
+    if ($login['kompetensi_keahlian']=="Teknik Kendaraan Ringan Otomotif") {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
-        $_SESSION['kode_jurusan'] = "03";
-        $_SESSION['kompetensi_keahlian'] = "Akuntansi dan Keuangan Lembaga";
+        $_SESSION['kode_jurusan'] = "05";
+        $_SESSION['kode_jur'] = "tkr";
+        $_SESSION['kompetensi_keahlian'] = "Teknik Kendaraan Ringan Otomotif";
 
         header("location:../dashboard.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {
-        echo "gagal1";
-        // header("location:index.php?pesan=gagal");
+        // echo "gagal1";
+        header("location:index.php?pesan=gagal");
     }
 } else {
-    echo "gagal2";
-    // header("location:index.php?pesan=gagal");
+    // echo "gagal2";
+    header("location:index.php?pesan=gagal");
 }

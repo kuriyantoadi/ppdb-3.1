@@ -26,6 +26,7 @@ if ($cek > 0) {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
         $_SESSION['kode_jurusan'] = "03";
+        $_SESSION['kode_jur'] = "tkj";
         $_SESSION['kompetensi_keahlian'] = "Teknik Komputer dan Jaringan";
 
         header("location:../dashboard.php?nik=$nik");

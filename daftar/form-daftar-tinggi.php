@@ -1,23 +1,15 @@
-<h4>A. DATA ASAL SEKOLAH CALON PESERTA DIDIK</h4>
-<div class="form-group">
-  <label class="control-label col-sm-2" for="email">Nama Asal Sekolah :</label>
-  <div class="col-sm-6">
-    <input type="text" class="form-control" placeholder="Nama Asal Sekolah" name="asal_sekolah" id="asal_sekolah" required>
-  </div>
-</div>
-<div class="form-group">
-  <label class="control-label col-sm-2" for="email">NPSN Sekolah Asal :</label>
-  <div class="col-sm-6">
-    <input type="number" class="form-control" placeholder="NPSN Sekolah Asal" name="npsn_sekolah" required>
-  </div>
-</div>
-
 <br>
-<h4>B. IDENTITAS CALON PESERTA DIDIK</h4>
+<h4>A. IDENTITAS CALON PESERTA DIDIK</h4>
 <div class="form-group">
   <label class="control-label col-sm-2" for="email">NISN :</label>
   <div class="col-sm-6">
     <input type="number" class="form-control" placeholder="NISN" name="nisn"  required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2" for="email">Nama Sekolah Asal:</label>
+  <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Nama Sekolah Asal" name="asal_sekolah" id="asal_sekolah" required>
   </div>
 </div>
 <div class="form-group">
@@ -64,7 +56,7 @@
 
 
 <br>
-<h4>C. KEPENDUDUKAN CALON PESERTA DIDIK</h4>
+<h4>B. KEPENDUDUKAN CALON PESERTA DIDIK</h4>
 <div class="form-group">
   <label class="control-label col-sm-2" for="email">NIK :</label>
   <div class="col-sm-6">
@@ -105,12 +97,7 @@
     <input type="text" class="form-control" placeholder="Kelurahan/Desa" name="kelurahan" required>
   </div>
 </div>
-<div class="form-group">
-  <label class="control-label col-sm-2" for="email">Kode POS :</label>
-  <div class="col-sm-6">
-    <input type="number" class="form-control" placeholder="Kode POS" name="kode_pos"  required>
-  </div>
-</div>
+
 <div class="form-group">
   <label class="control-label col-sm-2" for="email">Alamat :</label>
   <div class="col-sm-6">
@@ -130,14 +117,14 @@
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Meter</b>
+  <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Kilo Meter</b>
   <div class="col-sm-4">
     <input type="number" class="form-control" placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" required>
   </div>
 </div>
 
 <br>
-<h4>D. DATA ORANG TUA/WALI CALON PESERTA DIDIK</h4>
+<h4>C. DATA ORANG TUA/WALI CALON PESERTA DIDIK</h4>
 <div class="form-group">
   <label class="control-label col-sm-2" for="email">Nama Orang Tua/Wali :</label>
   <div class="col-sm-6">
@@ -165,7 +152,7 @@
 
 <br>
 
-<h4>F. INPUT SCAN BERKAS CALON PESERTA DIDIK</h4>
+<h4>D. INPUT SCAN BERKAS CALON PESERTA DIDIK</h4>
 <div class="form-group">
   <label class="control-label col-sm-2">SKHUN atau Surat Keterangan Lulus</label>
   <div class="col-sm-6">
@@ -201,14 +188,14 @@
     <h6>Tidak Boleh Kosong, ukuran maksimal 500 Kb, format pdf</h6>
   </div>
 </div>
+
 <div class="form-group">
-  <label class="control-label col-sm-2">Swafoto Sedang diukur tinggi badan </label>
+  <label class="control-label col-sm-2">Rapor Semester 1</label>
   <div class="col-sm-6">
-    <input type="file" name="pdf_swa_kk" accept="application/pdf" class="form-control-file" id="cek_swa_kk" required>
-    <h6>Tidak Boleh Kosong, ukuran maksimal 500 Kb, format pdf</h6>
+    <input type="file" name="pdf_rapor1" accept="application/pdf" class="form-control-file" required>
+    <h6>Tidak Boleh Kosong, ukuran maksimal 300 Kb, format pdf</h6>
   </div>
 </div>
-
 <div class="form-group">
   <label class="control-label col-sm-2">Rapor Semester 2 </label>
   <div class="col-sm-6">
@@ -237,14 +224,7 @@
     <h6>Tidak Boleh Kosong, ukuran maksimal 300 Kb, format pdf</h6>
   </div>
 </div>
-<div class="form-group">
-  <label class="control-label col-sm-2">Rapor Semester 6</label>
-  <div class="col-sm-6">
-    <input type="file" name="pdf_rapor6" accept="application/pdf" class="form-control-file" required>
-    <h6>Tidak Boleh Kosong, ukuran maksimal 300 Kb, format pdf</h6>
-    <h6><b>Jika rapor semester 6 tidak ada, maka digantikan semester 1</b></h6>
-  </div>
-</div>
+
 <div class="form-group">
   <label class="control-label col-sm-2">PKH/KKS/KIP/Jamsosda </label>
   <div class="col-sm-6">
@@ -253,21 +233,21 @@
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Piagam 1 </label>
+  <label class="control-label col-sm-2">Piagam/Sertifikat 1 </label>
   <div class="col-sm-6">
     <input type="file" name="pdf_piagam1" accept="application/pdf" class="form-control-file" id="cek_piagam1">
     <h6>Ukuran maksimal 500 Kb, format pdf</h6>
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Piagam 2</label>
+  <label class="control-label col-sm-2">Piagam/Sertifikat 2</label>
   <div class="col-sm-6">
     <input type="file" name="pdf_piagam2" accept="application/pdf" class="form-control-file" id="cek_piagam2">
     <h6>Ukuran maksimal 500 Kb, format pdf</h6>
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Piagam 3 </label>
+  <label class="control-label col-sm-2">Piagam/Sertifikat 3 </label>
   <div class="col-sm-6">
     <input type="file" name="pdf_piagam3" accept="application/pdf" class="form-control-file" id="cek_piagam3">
     <h6>Ukuran maksimal 500 Kb, format pdf</h6>
@@ -276,48 +256,184 @@
 <h6><b>Informasi :</h6>
 <h6>1. File harus dengan format <b>.pdf</b> dengan ukuran maksimal <b>500 kb</b></h6>
 <h6>2. Dokumen yang di <b>Scan Harus Asli (bukan Photo Copy)</b></h6>
-<h6>3. Piagam dan PKH/KKS/KIP/Jamsosda boleh dikosongkan</h6>
-<h6>4. Piagam hasil perlombaan dan/atau penghargaan di bidang akademik maupun non akademik</h6>
-<h6>5. Piagam boleh di isi bukti hafiz alquran atau bukti hafal kitab sesuai agama yang dianut</h6>
-<h6>6. Contoh swa photo dapat dilihat di link berikut(belum di kerjakan)</h6>
-<h6>7. Surat sehat harus ditandatangani oleh dokter pemerintah.</h6>
-<h6>8. Proses daftar tergatung jaringan internet, karena file yang diupload cukup banyak</h6>
+<h6>3. Piagam/Sertifikat dan PKH/KKS/KIP/Jamsosda boleh dikosongkan</h6>
+<h6>4. Piagam/Sertifikat hasil perlombaan dan/atau penghargaan di bidang akademik maupun non akademik</h6>
+<h6>5. Piagam/Sertifikat boleh di isi bukti hafiz alquran atau bukti hafal kitab sesuai agama yang dianut</h6>
+<h6>6. Surat sehat harus ditandatangani oleh dokter pemerintah.</h6>
+<h6>7. Proses daftar tergatung jaringan internet, karena file yang diupload cukup banyak</h6>
 
 <br>
-<h4>G. INPUT NILAI RATA-RATA RAPOR SMP/MTS/Sederajat</h4>
+<h4>E. INPUT NILAI RAPOR SMP/MTS/Sederajat</h4>
+<h5>E.1. Nilai Rapor Semester 1</h5>
+
 <div class="form-group">
-  <label class="control-label col-sm-2">Rata-rata Rapor Semester 2</label>
+  <label class="control-label col-sm-2">Agama</label>
   <div class="col-sm-3">
-    <input type="number" class="form-control" placeholder="Semester 2" name="rapor_2" required>
+    <input type="number" class="form-control" placeholder="Semester 1 Agama" name="sem1_agama" required>
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Rata-rata Rapor Semester 3</label>
+  <label class="control-label col-sm-2">Bahasa Indonesia</label>
   <div class="col-sm-3">
-    <input type="number" class="form-control" placeholder="Semester 3" name="rapor_3"  required>
+    <input type="number" class="form-control" placeholder="Semester 1 Bahasa Indonesia" name="sem1_b_indo" required>
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Rata-rata Rapor Semester 4</label>
+  <label class="control-label col-sm-2">Matematika</label>
   <div class="col-sm-3">
-    <input type="number" class="form-control" placeholder="Semester 4" name="rapor_4" required>
+    <input type="number" class="form-control" placeholder="Semester 1 Matematik" name="sem1_mtk" required>
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Rata-rata Rapor Semester 5</label>
+  <label class="control-label col-sm-2">IPA</label>
   <div class="col-sm-3">
-    <input type="number" class="form-control" placeholder="Semester 5" name="rapor_5"  required>
+    <input type="number" class="form-control" placeholder="Semester 1 IPA" name="sem1_ipa" required>
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Rata-rata Rapor Semester 6</label>
+  <label class="control-label col-sm-2">Bahasa Inggris</label>
   <div class="col-sm-3">
-    <input type="number" class="form-control" placeholder="Semester 6" name="rapor_6"  required>
-    <h6><b>Jika rapor semester 6 tidak ada, maka digantikan semester 1</b></h6>
+    <input type="number" class="form-control" placeholder="Semester 1 Bahasa Inggris" name="sem1_b_ing" required>
   </div>
 </div>
+
 <br>
-<h4>H. KONDISI FISIK DAN KEBIASAAN</h4>
+<h5>E.2. Nilai Rapor Semester 2</h5>
+<div class="form-group">
+  <label class="control-label col-sm-2">Agama</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 2 Agama" name="sem2_agama" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Indonesia</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 2 Bahasa Indonesia" name="sem2_b_indo" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Matematika</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 2 Matematik" name="sem2_mtk" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">IPA</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 2 IPA" name="sem2_ipa" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Inggris</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 2 Bahasa Inggris" name="sem2_b_ing" required>
+  </div>
+</div>
+
+<br>
+<h5>E.3. Nilai Rapor Semester 3</h5>
+
+<div class="form-group">
+  <label class="control-label col-sm-2">Agama</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 3 Agama" name="sem3_agama" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Indonesia</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 3 Bahasa Indonesia" name="sem3_b_indo" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Matematika</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 3 Matematik" name="sem3_mtk" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">IPA</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 3 IPA" name="sem3_ipa" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Inggris</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 3 Bahasa Inggris" name="sem3_b_ing" required>
+  </div>
+</div>
+
+<br>
+<h5>E.4. Nilai Rapor Semester 4</h5>
+
+<div class="form-group">
+  <label class="control-label col-sm-2">Agama</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 4 Agama" name="sem4_agama" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Indonesia</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 4 Bahasa Indonesia" name="sem4_b_indo" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Matematika</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 4 Matematik" name="sem4_mtk" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">IPA</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 4 IPA" name="sem4_ipa" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Inggris</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 4 Bahasa Inggris" name="sem4_b_ing" required>
+  </div>
+</div>
+
+<br>
+<h5>E.5. Nilai Rapor Semester 5</h5>
+
+<div class="form-group">
+  <label class="control-label col-sm-2">Agama</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 5 Agama" name="sem5_agama" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Indonesia</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 5 Bahasa Indonesia" name="sem5_b_indo" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Matematika</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 5 Matematik" name="sem5_mtk" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">IPA</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 5 IPA" name="sem5_ipa" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2">Bahasa Inggris</label>
+  <div class="col-sm-3">
+    <input type="number" class="form-control" placeholder="Semester 5 Bahasa Inggris" name="sem5_b_ing" required>
+  </div>
+</div>
+
+<br>
+<h4>F. KONDISI FISIK DAN KEBIASAAN</h4>
 <div class="form-group">
   <label class="control-label col-sm-2">Apakah anda bertindik (bagi laki-laki) </label>
   <div class="col-sm-3">
@@ -380,9 +496,13 @@
   </div>
 </div>
 <div class="form-group">
-  <label class="control-label col-sm-2">Tinggi Badan </label>
-  <div class="col-sm-3">
-    <input type="number" name="tinggi_badan" value="" class="form-control" required>
+  <label class="control-label col-sm-2">Tinggi Badan</label>
+  <div class="col-sm-2">
+    <div class="input-group">
+      <input type="text" name="tinggi_badan" class="form-control" placeholder="Tinggi Badan" aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2">cm</span>
+    </div>
+
   </div>
 </div>
 <br>

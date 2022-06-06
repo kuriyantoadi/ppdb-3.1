@@ -4,11 +4,12 @@ if ($_SESSION['status']!="siswa" && $_SESSION['status']!="admin" && $_SESSION['s
     header("location:index.php?pesan=belum_login");
 }
 $kode_jurusan = $_SESSION['kode_jurusan'];
+$kode_jur = $_SESSION['kode_jur'];
 $kompetensi_keahlian = $_SESSION['kompetensi_keahlian'];
 
 include 'header.php';
 
-  include '../koneksi.php';
+include '../koneksi.php';
   // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 
   $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
@@ -20,7 +21,7 @@ include 'header.php';
   <table>
     <tr>
       <td>
-        <a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a>
+        <a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="<?= $kode_jur ?>/logout.php">Keluar</a>
         <?php if ($d['kondisi'] != "Reset Data") { ?>
         <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
         <?php } ?>
