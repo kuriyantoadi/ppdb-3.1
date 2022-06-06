@@ -210,7 +210,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
 
 <script>
     window.print();
-  </script>
+</script>
 
 
   </body>

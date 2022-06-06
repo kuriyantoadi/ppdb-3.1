@@ -55,7 +55,7 @@ include 'header.php';
 
       <a style="margin-right: 10px;" type="button" class="btn btn-danger btn-md" href="d/<?= $kode_jur ?>/index.php">Kembali</a>
       <a style="margin-right: 10px;" type="button" class="btn btn-warning btn-md" href="siswa_reset.php?id=<?= $d['id'] ?>&kode_jur=<?= $kode_jur ?>" onclick="return confirm('Anda yakin Reset data siswa <?php echo $d['nama_siswa']; ?> ?')">Reset Data</a>
-      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../daftar/<?= $kode_jur ?>/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
+      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../daftar/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
 
       <h5 style="margin-top: 20px"><b>Informasi :</b></h5>
       <ol>
