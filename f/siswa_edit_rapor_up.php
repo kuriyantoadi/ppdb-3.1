@@ -36,34 +36,32 @@ $sem1_mtk = isset($_POST['sem1_mtk']) ? abs((int) $_POST['sem1_mtk']) :0;
 $sem1_ipa = isset($_POST['sem1_ipa']) ? abs((int) $_POST['sem1_ipa']) :0;
 $sem1_b_ing = isset($_POST['sem1_b_ing']) ? abs((int) $_POST['sem1_b_ing']) :0;
 
-//semester 2
-// $sem2_agama = mysql_real_escape_string($_POST['sem2_agama']);
-// $sem2_b_indo = mysql_real_escape_string($_POST['sem2_b_indo']);
-// $sem2_mtk = mysql_real_escape_string($_POST['sem2_mtk']);
-// $sem2_ipa = mysql_real_escape_string($_POST['sem2_ipa']);
-// $sem2_b_ing = mysql_real_escape_string($_POST['sem2_b_ing']);
-//
-// //semester 3
-// $sem3_agama = mysql_real_escape_string($_POST['sem3_agama']);
-// $sem3_b_indo = mysql_real_escape_string($_POST['sem3_b_indo']);
-// $sem3_mtk = mysql_real_escape_string($_POST['sem3_mtk']);
-// $sem3_ipa = mysql_real_escape_string($_POST['sem3_ipa']);
-// $sem3_b_ing = mysql_real_escape_string($_POST['sem3_b_ing']);
-//
-// //semester 4
-// $sem4_agama = mysql_real_escape_string($_POST['sem4_agama']);
-// $sem4_b_indo = mysql_real_escape_string($_POST['sem4_b_indo']);
-// $sem4_mtk = mysql_real_escape_string($_POST['sem4_mtk']);
-// $sem4_ipa = mysql_real_escape_string($_POST['sem4_ipa']);
-// $sem4_b_ing = mysql_real_escape_string($_POST['sem4_b_ing']);
-//
-// //semester 5
-// $sem5_agama = mysql_real_escape_string($_POST['sem5_agama']);
-// $sem5_b_indo = mysql_real_escape_string($_POST['sem5_b_indo']);
-// $sem5_mtk = mysql_real_escape_string($_POST['sem5_mtk']);
-// $sem5_ipa = mysql_real_escape_string($_POST['sem5_ipa']);
-// $sem5_b_ing = mysql_real_escape_string($_POST['sem5_b_ing']);
+// semester 2
+$sem2_agama = isset($_POST['sem2_agama']) ? abs((int) $_POST['sem2_agama']) :0;
+$sem2_b_indo = isset($_POST['sem2_b_indo']) ? abs((int) $_POST['sem2_b_indo']) :0;
+$sem2_mtk = isset($_POST['sem2_mtk']) ? abs((int) $_POST['sem2_mtk']) :0;
+$sem2_ipa = isset($_POST['sem2_ipa']) ? abs((int) $_POST['sem2_ipa']) :0;
+$sem2_b_ing = isset($_POST['sem2_b_ing']) ? abs((int) $_POST['sem2_b_ing']) :0;
 
+// semester 3
+$sem3_agama = isset($_POST['sem3_agama']) ? abs((int) $_POST['sem3_agama']) :0;
+$sem3_b_indo = isset($_POST['sem3_b_indo']) ? abs((int) $_POST['sem3_b_indo']) :0;
+$sem3_mtk = isset($_POST['sem3_mtk']) ? abs((int) $_POST['sem3_mtk']) :0;
+$sem3_ipa = isset($_POST['sem3_ipa']) ? abs((int) $_POST['sem3_ipa']) :0;
+$sem3_b_ing = isset($_POST['sem3_b_ing']) ? abs((int) $_POST['sem3_b_ing']) :0;
+
+// semester 4
+$sem4_agama = isset($_POST['sem4_agama']) ? abs((int) $_POST['sem4_agama']) :0;
+$sem4_b_indo = isset($_POST['sem4_b_indo']) ? abs((int) $_POST['sem4_b_indo']) :0;
+$sem4_mtk = isset($_POST['sem4_mtk']) ? abs((int) $_POST['sem4_mtk']) :0;
+$sem4_ipa = isset($_POST['sem4_ipa']) ? abs((int) $_POST['sem4_ipa']) :0;
+$sem4_b_ing = isset($_POST['sem4_b_ing']) ? abs((int) $_POST['sem4_b_ing']) :0;
+
+$sem5_agama = isset($_POST['sem5_agama']) ? abs((int) $_POST['sem5_agama']) :0;
+$sem5_b_indo = isset($_POST['sem5_b_indo']) ? abs((int) $_POST['sem5_b_indo']) :0;
+$sem5_mtk = isset($_POST['sem5_mtk']) ? abs((int) $_POST['sem5_mtk']) :0;
+$sem5_ipa = isset($_POST['sem5_ipa']) ? abs((int) $_POST['sem5_ipa']) :0;
+$sem5_b_ing = isset($_POST['sem5_b_ing']) ? abs((int) $_POST['sem5_b_ing']) :0;
 
 $rapor_edit = mysqli_query($koneksi, "UPDATE tb_siswa SET
                           sem1_agama='$sem1_agama',
