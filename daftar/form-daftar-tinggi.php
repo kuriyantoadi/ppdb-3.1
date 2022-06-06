@@ -270,6 +270,7 @@
   <label class="control-label col-sm-2">Agama</label>
   <div class="col-sm-3">
     <input type="number" class="form-control" placeholder="Semester 1 Agama" name="sem1_agama" required>
+    <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
   </div>
 </div>
 <div class="form-group">
@@ -303,6 +304,7 @@
   <label class="control-label col-sm-2">Agama</label>
   <div class="col-sm-3">
     <input type="number" class="form-control" placeholder="Semester 2 Agama" name="sem2_agama" required>
+    <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
   </div>
 </div>
 <div class="form-group">
@@ -337,6 +339,7 @@
   <label class="control-label col-sm-2">Agama</label>
   <div class="col-sm-3">
     <input type="number" class="form-control" placeholder="Semester 3 Agama" name="sem3_agama" required>
+    <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
   </div>
 </div>
 <div class="form-group">
@@ -371,6 +374,7 @@
   <label class="control-label col-sm-2">Agama</label>
   <div class="col-sm-3">
     <input type="number" class="form-control" placeholder="Semester 4 Agama" name="sem4_agama" required>
+    <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
   </div>
 </div>
 <div class="form-group">
@@ -405,6 +409,7 @@
   <label class="control-label col-sm-2">Agama</label>
   <div class="col-sm-3">
     <input type="number" class="form-control" placeholder="Semester 5 Agama" name="sem5_agama" required>
+    <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
   </div>
 </div>
 <div class="form-group">

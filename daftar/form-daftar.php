@@ -3,7 +3,7 @@
 <div class="form-group">
   <label class="control-label col-sm-2" for="email">NISN :</label>
   <div class="col-sm-6">
-    <input type="number" class="form-control" placeholder="NISN" name="nisn"  required>
+    <input type="number" class="form-control" placeholder="NISN" name="nisn" required>
   </div>
 </div>
 <div class="form-group">
@@ -60,7 +60,7 @@
 <div class="form-group">
   <label class="control-label col-sm-2" for="email">NIK :</label>
   <div class="col-sm-6">
-    <input type="number" class="form-control" placeholder="NIK siswa dari KK" name="nik" required>
+    <input type="number" class="form-control" placeholder="NIK siswa dari KK" name="nik"  required>
   </div>
 </div>
 <div class="form-group">

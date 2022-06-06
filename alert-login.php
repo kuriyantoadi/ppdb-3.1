@@ -3,7 +3,8 @@
       if ($_GET['pesan'] == "gagal") {
           echo "
           <div class='alert alert-danger' role='alert'>
-            <center>Maaf Password anda salah!
+            <center>Maaf Password anda salah atau
+            Halaman Login Tidak Sesuai dengan Kompentensi Keahlian
           </div>";
       } elseif ($_GET['pesan'] == "logout") {
           echo "
