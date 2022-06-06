@@ -15,7 +15,7 @@ include '../header.php';
       <h3></h3>
     </center>
     <center>
-      <h3>Kompetensi Keahlian Teknik Kendaraan Ringan</h3>
+      <h3>Kompetensi Keahlian Teknik Kendaraan Ringan Otomotif</h3>
     </center>
 
     <br><br><br>
@@ -25,7 +25,7 @@ include '../header.php';
       <div class="col-sm-7">
         <a href="../../logout.php" type="button" class="btn btn-danger">Logout</a>
         <a href="../../e/tkr/tkr-lap.php" type="button" class="btn btn-success"
-        onclick="return confirm('Download Data PPDB Kompetensi Keahlian Teknik Kendaraan Ringan ?')">Download TKR</a>
+        onclick="return confirm('Download Data PPDB Kompetensi Keahlian Teknik Kendaraan Ringan Otomotif ?')">Download TKR</a>
       </div>
       <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
       <div class="col-sm-3">
@@ -61,9 +61,9 @@ include '../header.php';
           <th>
             <center>Kondisi
           </th>
-          <th>
+          <!-- <th>
             <center>Hapus
-          </th>
+          </th> -->
           <th>
             <center>Lihat
           </th>
@@ -75,11 +75,11 @@ include '../header.php';
     $halperpage = 500;
     $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
     $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
-    $result = mysqli_query($koneksi, "SELECT * FROM f_siswa_tkr");
+    $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
-    $data = mysqli_query($koneksi, "SELECT * from f_siswa_tkr LIMIT $mulai, $halperpage ");
+    $data = mysqli_query($koneksi, "SELECT * from tb_siswa where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' ORDER BY nisn DESC LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 
@@ -112,13 +112,13 @@ include '../header.php';
             <center>
               <?php include('../../tampil-validasi.php'); ?>
           </td>
-          <td>
+          <!-- <td>
             <a type="button"   onclick="return confirm('Hapus Data Siswa <?= $d['nama_siswa'] ?> ?')"
             class="btn btn-danger btn-sm" href="hapus.php?id=<?php echo $d['id']; ?>">Hapus</a>
-          </td>
+          </td> -->
           <td>
             <center>
-              <a type="button"  class="btn btn-info btn-sm" href="tampil.php?id=<?php echo $d['id']; ?>">Lihat</a>
+              <a type="button"  class="btn btn-info btn-sm" href="../../siswa_lihat.php?id=<?php echo $d['id']; ?>">Lihat</a>
           </td>
         </tr>
 
