@@ -112,12 +112,6 @@ include '../header.php';
           <td>
             <center>
               <?php include('../../tampil-validasi.php'); ?>
-              <?= $d['val_skhun'] ?>
-              <br>
-              <?= $d['val_surat_dokter'] ?>
-              <br>
-              <?= $d['val_kk'] ?>
-
           </td>
           <!-- <td>
             <a type="button"   onclick="return confirm('Hapus Data Siswa <?= $d['nama_siswa'] ?> ?')"
