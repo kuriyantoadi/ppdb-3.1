@@ -116,7 +116,7 @@ include '../header.php';
               <br>
               <?= $d['val_surat_dokter'] ?>
               <br>
-              <?= $d['kartu_keluarga'] ?>
+              <?= $d['val_kk'] ?>
 
           </td>
           <!-- <td>
