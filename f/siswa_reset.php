@@ -17,7 +17,7 @@ if ($_SESSION['status']!="akl" &&
 
 
 $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
-$kode_jur = mysql_real_escape_string($_GET['kode_jur']);
+$id = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 
 // $id = strip_tags($_GET['id']);
 // $id = $_GET['id'];
