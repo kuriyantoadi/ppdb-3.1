@@ -162,7 +162,7 @@ include 'header.php';
               </tr>
               <tr>
                 <td>Jarak Rumah ke Sekolah</td>
-                <td><?php echo $d['jarak_kesekolah']; ?> Meter</td>
+                <td><?php echo $d['jarak_kesekolah']; ?>Kilo Meter</td>
               </tr>
               <tr>
                 <td>Nama Orang Tua / Wali</td>
