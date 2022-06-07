@@ -24,7 +24,7 @@ $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 // $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 
 
-echo $kode_jur;
+// echo $kode_jur;
 
 $data = mysqli_query($koneksi, "SELECT * from tb_siswa where id='$id'");
 while ($d = mysqli_fetch_array($data)) {
