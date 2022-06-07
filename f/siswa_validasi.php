@@ -38,7 +38,6 @@ $_SESSION['status']!="admin"
     // UPDATE `upload` SET `id_file`=[value-1],`nama_file`=[value-2] WHERE 1
 
     mysqli_query($koneksi, "UPDATE tb_siswa SET
-               id='$id',
                val_skhun='$val_skhun',
                val_surat_dokter='$val_surat_dokter',
                val_kk='$val_kk',
