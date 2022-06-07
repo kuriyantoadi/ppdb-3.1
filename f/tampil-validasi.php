@@ -26,17 +26,17 @@ if ($tampil_kondisi == "Siswa Lolos Seleksi") {
 //validasi salah
 $t_val_skhun = $d['val_skhun'];
 if ($t_val_skhun == "Data Tidak Sesuai") {
-  echo "<br><span style='margin-right: 5px;' class='label label-danger'>SKHUN1</span>";
+  echo "<br><span style='margin-right: 5px;' class='label label-danger'>SKHUN</span>";
 }
 
 $t_val_surat_dokter = $d['val_surat_dokter'];
-if ($t_val_skhun == "Data Tidak Sesuai") {
-  echo "<span style='margin-right: 5px;' class='label label-danger'>Surat Dokter1</span>";
+if ($t_val_surat_dokter == "Data Tidak Sesuai") {
+  echo "<span style='margin-right: 5px;' class='label label-danger'>Surat Dokter</span>";
 }
 
 $t_val_akta = $d['val_kk'];
-if ($t_val_skhun == "Data Tidak Sesuai") {
-  echo "<br><span style='margin-right: 5px;' class='label label-danger'>Kartu Keluarga1</span>";
+if ($t_val_akta == "Data Tidak Sesuai") {
+  echo "<br><span style='margin-right: 5px;' class='label label-danger'>Kartu Keluarga</span>";
 }
 
 $t_val_skhun = $d['val_akta'];
