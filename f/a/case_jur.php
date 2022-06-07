@@ -5,8 +5,7 @@ switch ($d['kompetensi_keahlian']) {
     $kode_jur = "akl";
     $kode_jurusan = "01";
     break;
-  case "":
-    echo "Otomatisasi dan Tata Kelola Perkantoran";
+  case "Otomatisasi dan Tata Kelola Perkantoran":
     $kode_jur = "otkp";
     $kode_jurusan = "02";
 
