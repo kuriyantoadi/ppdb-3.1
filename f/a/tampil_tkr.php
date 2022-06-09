@@ -17,7 +17,7 @@ include 'header.php';
     <?php include '../../alert.php' ?>
     <div class="col-sm-7">
       <?php include 'menu.php' ?>
-      <a href="../../e/tkr/tkr-lap.php" type="button" class="btn btn-success" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Teknik Kendaraan Ringan ?')">Download TKR</a>
+      <a href="../e/tkr/tkr-lap.php" type="button" class="btn btn-success" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Teknik Kendaraan Ringan ?')">Download TKR</a>
     </div>
     <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
     <div class="col-sm-3">

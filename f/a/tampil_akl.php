@@ -17,7 +17,8 @@ include 'header.php';
     <?php include '../../alert.php' ?>
     <div class="col-sm-7">
       <?php include 'menu.php' ?>
-      <a href="../../e/akl/akl-lap.php" type="button" class="btn btn-success" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Akuntansi dan Keuangan Lembaga ?')">Download AKL</a>
+      <!-- <a href="../../e/akl/akl-lap.php" type="button" class="btn btn-success" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Akuntansi dan Keuangan Lembaga ?')">Download AKL</a> -->
+      <a href="../e/akl/akl-lap.php" type="button" class="btn btn-success" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Akuntansi dan Keuangan Lembaga ?')">Download AKL</a>
     </div>
     <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
     <div class="col-sm-3">
