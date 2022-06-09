@@ -206,7 +206,7 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Meter</b>
+      <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Kilo Meter</b>
       <div class="col-sm-4">
         <input type="number" class="form-control"   placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" required>
       </div>
@@ -214,8 +214,8 @@
     <h6><b>Informasi</h6>
     <h6>1. Jarak alamat siswa ke sekolah bisa dicek dengan google maps</h6>
     <h6>2. Sekolah adalah SMK Negeri 1 Kragilan</h6>
-    <h6>3. Contoh pengisian 1000 <b>tidak perlu ditulis Meter</h6>
-    <h6>4. Jarak harus ditulis dalam satuan meter</h6>
+    <h6>3. Contoh pengisian 1000 <b>tidak perlu ditulis Kilo Meter</h6>
+    <h6>4. Jarak harus ditulis dalam satuan kilo meter</h6>
     <h6>5. Jika Kartu Keluarga <b>Hilang</b> atau <b>Dalam Proses Pembuatan</b> bisa digantikan dengan surat keterangan domisili dari
     RT/RW/Kelurahan</h6>
 

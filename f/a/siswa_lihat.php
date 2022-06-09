@@ -40,7 +40,7 @@ while ($d = mysqli_fetch_array($data)) {
 
       <a style="margin-right: 10px;" type="button" class="btn btn-danger btn-md" href="tampil_<?= $kode_jur ?>.php">Kembali</a>
       <a style="margin-right: 10px;" type="button" class="btn btn-warning btn-md" href="siswa_reset.php?id=<?= $d['id'] ?>&kode_jur=<?= $kode_jur ?>" onclick="return confirm('Anda yakin Reset data siswa <?php echo $d['nama_siswa']; ?> ?')">Reset Data</a>
-      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../../daftar/<?= $kode_jur ?>/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
+      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../../daftar/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
 
       <h5 style="margin-top: 20px"><b>Informasi :</b></h5>
       <ol>
@@ -147,7 +147,7 @@ while ($d = mysqli_fetch_array($data)) {
               </tr>
               <tr>
                 <td>Jarak Rumah ke Sekolah</td>
-                <td><?php echo $d['jarak_kesekolah']; ?> Meter</td>
+                <td><?php echo $d['jarak_kesekolah']; ?> Kilo Meter</td>
               </tr>
               <tr>
                 <td>Nama Orang Tua / Wali</td>
