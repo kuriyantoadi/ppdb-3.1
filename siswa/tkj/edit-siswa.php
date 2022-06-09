@@ -282,7 +282,7 @@ if ($_SESSION['status']!="siswa") {
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Meter</b>
+        <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Kilo Meter</b>
         <div class="col-sm-4">
           <input type="number" class="form-control" placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" value="" required>
         </div>
