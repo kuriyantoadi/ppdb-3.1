@@ -75,12 +75,38 @@
 			<th>no_hp_org_tua </th>
 			<th>pekerjaan_org_tua </th>
 			<th>kip </th>
+			<th>sem1_agama </th>
+			<th>sem1_b_indo </th>
+			<th>sem1_mtk </th>
+			<th>sem1_ipa </th>
+			<th>sem1_b_ing </th>
+			<th>sem2_agama </th>
+			<th>sem2_b_indo </th>
+			<th>sem2_mtk </th>
+			<th>sem2_ipa </th>
+			<th>sem2_b_ing </th>
+			<th>sem3_agama </th>
+			<th>sem3_b_indo </th>
+			<th>sem3_mtk </th>
+			<th>sem3_ipa </th>
+			<th>sem3_b_ing </th>
+			<th>sem4_agama </th>
+			<th>sem4_b_indo </th>
+			<th>sem4_mtk </th>
+			<th>sem4_ipa </th>
+			<th>sem4_b_ing </th>
+			<th>sem5_agama </th>
+			<th>sem5_b_indo </th>
+			<th>sem5_mtk </th>
+			<th>sem5_ipa </th>
+			<th>sem5_b_ing </th>
 			<th>pdf_skhun </th>
 			<th>pdf_surat_dokter </th>
 			<th>pdf_kk </th>
 			<th>pdf_akta </th>
 			<th>pdf_photo </th>
 			<th>pdf_kip </th>
+			<th>pdf_rapor_1 </th>
 			<th>pdf_rapor_2 </th>
 			<th>pdf_rapor_3 </th>
 			<th>pdf_rapor_4 </th>
@@ -94,11 +120,13 @@
 			<th>bertato </th>
 			<th>peminum </th>
 			<th>buta_warna </th>
+			<th>tinggi_badan </th>
 			<th>val_skhun </th>
 			<th>val_surat_dokter </th>
 			<th>val_kk </th>
 			<th>val_akta </th>
 			<th>val_photo </th>
+			<th>val_rapor_1 </th>
 			<th>val_rapor_2 </th>
 			<th>val_rapor_3 </th>
 			<th>val_rapor_4 </th>
@@ -145,12 +173,38 @@
 			<td><?= $d['no_hp_org_tua'] ?></td>
 			<td><?= $d['pekerjaan_org_tua'] ?></td>
 			<td><?= $d['kip'] ?></td>
+			<td><?= $d['sem1_agama'] ?></td>
+			<td><?= $d['sem1_b_indo'] ?></td>
+			<td><?= $d['sem1_mtk'] ?></td>
+			<td><?= $d['sem1_ipa'] ?></td>
+			<td><?= $d['sem1_b_ing'] ?></td>
+			<td><?= $d['sem2_agama'] ?></td>
+			<td><?= $d['sem2_b_indo'] ?></td>
+			<td><?= $d['sem2_mtk'] ?></td>
+			<td><?= $d['sem2_ipa'] ?></td>
+			<td><?= $d['sem2_b_ing'] ?></td>
+			<td><?= $d['sem3_agama'] ?></td>
+			<td><?= $d['sem3_b_indo'] ?></td>
+			<td><?= $d['sem3_mtk'] ?></td>
+			<td><?= $d['sem3_ipa'] ?></td>
+			<td><?= $d['sem3_b_ing'] ?></td>
+			<td><?= $d['sem4_agama'] ?></td>
+			<td><?= $d['sem4_b_indo'] ?></td>
+			<td><?= $d['sem4_mtk'] ?></td>
+			<td><?= $d['sem4_ipa'] ?></td>
+			<td><?= $d['sem4_b_ing'] ?></td>
+			<td><?= $d['sem5_agama'] ?></td>
+			<td><?= $d['sem5_b_indo'] ?></td>
+			<td><?= $d['sem5_mtk'] ?></td>
+			<td><?= $d['sem5_ipa'] ?></td>
+			<td><?= $d['sem5_b_ing'] ?></td>
 			<td><?= $d['pdf_skhun'] ?></td>
 			<td><?= $d['pdf_surat_dokter'] ?></td>
 			<td><?= $d['pdf_kk'] ?></td>
 			<td><?= $d['pdf_akta'] ?></td>
 			<td><?= $d['pdf_photo'] ?></td>
 			<td><?= $d['pdf_kip'] ?></td>
+			<td><?= $d['pdf_rapor_1'] ?></td>
 			<td><?= $d['pdf_rapor_2'] ?></td>
 			<td><?= $d['pdf_rapor_3'] ?></td>
 			<td><?= $d['pdf_rapor_4'] ?></td>
@@ -164,11 +218,13 @@
 			<td><?= $d['bertato'] ?></td>
 			<td><?= $d['peminum'] ?></td>
 			<td><?= $d['buta_warna'] ?></td>
+			<td><?= $d['tinggi_badan'] ?></td>
 			<td><?= $d['val_skhun'] ?></td>
 			<td><?= $d['val_surat_dokter'] ?></td>
 			<td><?= $d['val_kk'] ?></td>
 			<td><?= $d['val_akta'] ?></td>
 			<td><?= $d['val_photo'] ?></td>
+			<td><?= $d['val_rapor_1'] ?></td>
 			<td><?= $d['val_rapor_2'] ?></td>
 			<td><?= $d['val_rapor_3'] ?></td>
 			<td><?= $d['val_rapor_4'] ?></td>
