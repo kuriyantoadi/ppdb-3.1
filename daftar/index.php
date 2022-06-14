@@ -1,2 +1,2 @@
 <?php
-header("location:https://ppdb.smkn1kragilan.sch.id");
+header("location:https://ppdb2022.smkn1kragilan.sch.id");
