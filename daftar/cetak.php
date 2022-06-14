@@ -42,7 +42,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
         <td>
           <center><h5><b>SMK Negeri 1 Kragilan</b></h5></center>
           <center><h6><b>Bukti Pendaftaran Calon Peserta Didik Baru</b></h6></center>
-          <center><h6><b>Tahun Pelajaran 2021/2022</b></h6></center>
+          <center><h6><b>Tahun Pelajaran 2022/2023</b></h6></center>
           <center><h6><b>Program Studi <?= $d['kompetensi_keahlian'] ?></b></h6></center><br>
         </td>
         <td>
@@ -184,13 +184,14 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
           <p>
             <b>Informasi :</b>
             <ol>
-              <li>Bukti pendaftaran agar dicetak, minimal 1 lembar, sebagai bukti Pendaftaran.</li>
-              <li>Siswa memberikan bukti pendaftaran dan berkas ke panitia untuk mendapatkan bukti pendaftaran PPDB dari Provinsi.</li>
-              <li>Username dan Password Tes hanya dapat dipakai di Web smkn1kragilan.sch.id.</li>
-              <li>Peserta akan mendapatkan nilai 0 jika tidak mengikuti Tes Minat dan Bakat.</li>
-              <li>Jika ada peserta yang tidak bisa masuk ke login web Tes Penelurusan Minat dan Bakat segera menghubungi panitia bagian informasi.</li>
-              <li>Tes dilaksanakan secara online di tempat tinggal masing-masing calon peserta didik.</li>
-              <li>Jika calon peserta didik melakukan kecurangan ketika mengerjakan soal tes, maka akan dinyatakan gugur dari pendaftaran.</li>
+              <li>Bukti pendaftaran dan Bukti Lulus seleksi administrasi agar di download dan dicetak, minimal 1 lembar sebagai bukti pendaftaran.</li>
+              <li>Bukti pendaftaran dan Bukti Lulus seleksi administrasi dapat di download dan di cetak jika sudah selesai melakukan pendaftaran.</li>
+              <li>Calon Peserta didik menyerahkan bukti pendaftaran, bukti lulus seleksi administrasi dan berkas pada saat Seleksi Uji Kompetensi.</li>
+              <li>Yang berhak mengikuti Seleksi Uji Kompetensi adalah yang di nyatakan lulus seleksi administrasi.</li>
+              <li>Peserta akan mendapat nilai 0 (nol) jika tidak mengikuti Seleksi Uji Kompetensi.</li>
+              <li>Seleksi Uji Kompetensi terdiri dari Tes Akademik dan Tes Wawancara.</li>
+              <li>Tes Akademik terdiri dari 5 mata pelajaran yaitu B. Indonesia, B.Inggris, Matematika, Psikotes, dan Jurusan.</li>
+              <li>Seleksi Uji Kompetensi dilakukan di Sekolah, calon peserta didik wajib membawa hp android atau laptop.</li>
               <li>Apabila ditemukan data calon peserta didik baru yang tidak sesuai, maka sekolah berhak untuk membatalkan hasil seleksi pendaftaran.</li>
             </ol>
           </p>
