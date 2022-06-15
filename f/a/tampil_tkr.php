@@ -62,11 +62,11 @@ include 'header.php';
       $halperpage = 500;
       $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
       $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
-      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa where kompetensi_keahlian='Teknik Kendaraan Ringan'");
+      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif'");
       $total = mysqli_num_rows($result);
       $pages = ceil($total/$halperpage);
 
-      $data = mysqli_query($koneksi, "SELECT * from tb_siswa where kompetensi_keahlian='Teknik Kendaraan Ringan' LIMIT $mulai, $halperpage ");
+      $data = mysqli_query($koneksi, "SELECT * from tb_siswa where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 

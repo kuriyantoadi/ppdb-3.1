@@ -76,11 +76,11 @@ include '../header.php';
     $halperpage = 500;
     $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
     $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
-    $result = mysqli_query($koneksi, "SELECT * FROM f_siswa_akl");
+    $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
-    $data = mysqli_query($koneksi, "SELECT * from f_siswa_akl LIMIT $mulai, $halperpage ");
+    $data = mysqli_query($koneksi, "SELECT * from tb_siswa LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 
