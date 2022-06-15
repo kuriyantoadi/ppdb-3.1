@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanda Terimakasih</title>
-    
+
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             SMK NEGERI 1 KRAGILAN <br>
             TAHUN AJARAN 2022/2023
         </h5>
-        
+
         <div class="col-6">
             <table class="table table-borderless mb-5">
                 <tr>
@@ -33,15 +33,15 @@
                 </tr>
             </table>
         </div>
-        
+
         <table class="table table-bordered border-dark">
             <thead class="bg-light text-center">
                 <tr>
                     <th>NO</th>
-                    <th>JENIS BERKAS</th>
-                    <th>ADA</th>
-                    <th>TIDAK ADA</th>
-                    <th>KET</th>
+                    <th><center>JENIS BERKAS</th>
+                    <th><center>ADA</th>
+                    <th><center>TIDAK ADA</th>
+                    <th><center>KET</th>
                 </tr>
             </thead>
             <tbody>
@@ -106,7 +106,32 @@
 
         <p>Catatan.</p>
 
-        <div class="row justify-content-around my-5">
+        <table border="1">
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              <div style="margin-right: 300px; margin-bottom: 0px">
+              </div>
+            </td>
+            <td>
+              Kragilan,
+              Juni 2022
+							<br>Panitia PPDB</td>
+          </tr>
+          <tr>
+            <td>
+              Photo
+            </td>
+            <td>
+
+            </td>
+            <td>...........................</td>
+          </tr>
+        </table>
+
+        <!-- <div class="row justify-content-around my-5">
             <div class="col-3">
                 <div class="border border-dark" style="width: 120px;">
                     <p class="text-center" style="padding-top: 50px; padding-bottom: 50px;">
@@ -120,7 +145,7 @@
                 Panitia PPDB
                 <div class="border-dark py-5" style="border-bottom: dotted;"></div>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

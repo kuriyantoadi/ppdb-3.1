@@ -70,7 +70,7 @@ include 'header.php';
         </td>
         <td>
           <?php if (!empty($d['pdf_rapor_1'])) { ?>
-          <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1']; ?>" type="application/pdf" width="100%" height="500px">
+          <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1']; ?>" type="application/pdf" width="100%" height="500px">
           <?php }else{ ?>
           <h5>File Tidak Ada</h5>
           <?php } ?>
@@ -95,7 +95,7 @@ include 'header.php';
 
     <td>
       <?php if (!empty($d['pdf_rapor_2'])) { ?>
-      <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2']; ?>" type="application/pdf" width="100%" height="500px">
+      <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2']; ?>" type="application/pdf" width="100%" height="500px">
       <?php }else{ ?>
       <h5>File Tidak Ada</h5>
       <?php } ?>
@@ -119,7 +119,7 @@ include 'header.php';
         </td>
         <td>
           <?php if (!empty($d['pdf_rapor_3'])) { ?>
-          <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3']; ?>" type="application/pdf" width="100%" height="500px">
+          <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3']; ?>" type="application/pdf" width="100%" height="500px">
           <?php }else{ ?>
           <h5>File Tidak Ada</h5>
           <?php } ?>
@@ -143,7 +143,7 @@ include 'header.php';
         </td>
         <td>
           <?php if (!empty($d['pdf_rapor_4'])) { ?>
-          <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4']; ?>" type="application/pdf" width="100%" height="500px">
+          <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4']; ?>" type="application/pdf" width="100%" height="500px">
           <?php }else{ ?>
           <h5>File Tidak Ada</h5>
           <?php } ?>
@@ -167,7 +167,7 @@ include 'header.php';
         </td>
         <td>
           <?php if (!empty($d['pdf_rapor_5'])) { ?>
-          <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5']; ?>" type="application/pdf" width="100%" height="500px">
+          <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5']; ?>" type="application/pdf" width="100%" height="500px">
           <?php }else{ ?>
           <h5>File Tidak Ada</h5>
           <?php } ?>

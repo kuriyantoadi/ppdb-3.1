@@ -213,7 +213,7 @@ while ($d = mysqli_fetch_array($data)) {
                 <td width="400px">
                   <h4>Validasi SKHUN/Surat Keterangan Lulus</h4>
                   Nama Siswa :<b> <?= $d['nama_siswa'] ?>  </b>
-                  <br>Asal Sekolah :<b> <?= $d['nama_siswa'] ?></b>
+                  <br>Asal Sekolah :<b> <?= $d['asal_sekolah'] ?></b>
 
                   <br>
                   <select name="val_skhun" class="form-control" required>
