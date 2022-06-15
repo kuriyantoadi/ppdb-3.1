@@ -225,7 +225,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_skhun'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_skhun']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_skhun']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -243,7 +243,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_surat_dokter'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_surat_dokter']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_surat_dokter']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -265,7 +265,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_kk'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kk']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kk']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -284,7 +284,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_akta'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -301,7 +301,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_photo'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_photo']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_photo']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -328,7 +328,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_1'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -355,7 +355,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_2'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -381,7 +381,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_3'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -408,7 +408,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_4'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -434,7 +434,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_5'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -452,7 +452,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_kip'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kip']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kip']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -468,7 +468,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_piagam1'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam1']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam1']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -484,7 +484,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_piagam2'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam2']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam2']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php  }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
