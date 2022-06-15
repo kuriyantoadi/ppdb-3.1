@@ -299,30 +299,35 @@
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 1 Agama" name="sem1_agama" value="<?= $d['sem1_agama'] ?>" required>
         <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Indonesia</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 1 Bahasa Indonesia" name="sem1_b_indo" value="<?= $d['sem1_b_indo'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Matematika</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 1 Matematik" name="sem1_mtk" value="<?= $d['sem1_mtk'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">IPA</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 1 IPA" name="sem1_ipa" value="<?= $d['sem1_ipa'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Inggris</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 1 Bahasa Inggris" name="sem1_b_ing" value="<?= $d['sem1_b_ing'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
 
@@ -333,30 +338,35 @@
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 2 Agama" name="sem2_agama" value="<?= $d['sem2_agama'] ?>" required>
         <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Indonesia</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 2 Bahasa Indonesia" name="sem2_b_indo" value="<?= $d['sem2_b_indo'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Matematika</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 2 Matematik" name="sem2_mtk" value="<?= $d['sem2_mtk'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">IPA</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 2 IPA" name="sem2_ipa" value="<?= $d['sem2_ipa'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Inggris</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 2 Bahasa Inggris" name="sem2_b_ing" value="<?= $d['sem2_b_ing'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
 
@@ -368,30 +378,35 @@
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 3 Agama" name="sem3_agama" value="<?= $d['sem3_agama'] ?>" required>
         <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Indonesia</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 3 Bahasa Indonesia" name="sem3_b_indo" value="<?= $d['sem3_b_indo'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Matematika</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 3 Matematik" name="sem3_mtk" value="<?= $d['sem3_mtk'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">IPA</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 3 IPA" name="sem3_ipa" value="<?= $d['sem3_ipa'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Inggris</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 3 Bahasa Inggris" name="sem3_b_ing" value="<?= $d['sem3_b_ing'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
 
@@ -403,30 +418,35 @@
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 4 Agama" name="sem4_agama" value="<?= $d['sem4_agama'] ?>" required>
         <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Indonesia</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 4 Bahasa Indonesia" name="sem4_b_indo" value="<?= $d['sem4_b_indo'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Matematika</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 4 Matematik" name="sem4_mtk" value="<?= $d['sem4_mtk'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">IPA</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 4 IPA" name="sem4_ipa" value="<?= $d['sem4_ipa'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Inggris</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 4 Bahasa Inggris" name="sem4_b_ing" value="<?= $d['sem4_b_ing'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
 
@@ -438,18 +458,21 @@
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 5 Agama" name="sem5_agama" value="<?= $d['sem5_agama'] ?>" required>
         <h6>Jika nilai Agama lebih 1, maka nilai agama di rata-rata terlebih dahulu baru di inputkan</h6>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Bahasa Indonesia</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 5 Bahasa Indonesia" name="sem5_b_indo" value="<?= $d['sem5_b_indo'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Matematika</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 5 Matematik" name="sem5_mtk" value="<?= $d['sem5_mtk'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
     <div class="form-group">
@@ -462,6 +485,7 @@
       <label class="control-label col-sm-2">Bahasa Inggris</label>
       <div class="col-sm-3">
         <input type="number" class="form-control" placeholder="Semester 5 Bahasa Inggris" name="sem5_b_ing" value="<?= $d['sem5_b_ing'] ?>" required>
+        <h6>Nilai Rata-Rata (Pengetahuan + Keterampilan)</h6>
       </div>
     </div>
 
