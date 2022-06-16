@@ -120,9 +120,9 @@ include '../header.php';
             class="btn btn-danger btn-sm" href="hapus.php?id=<?php echo $d['id']; ?>">Hapus</a>
           </td> -->
           <td>
-            <td>
-              <a type="button" class="btn btn-primary btn-sm" href="../../siswa_edit.php?id=<?php echo $d['id']; ?>">Edit</a>
-            </td>
+            <a type="button" class="btn btn-primary btn-sm" href="../../siswa_edit.php?id=<?php echo $d['id']; ?>">Edit</a>
+          </td>
+          <td>
             <center>
               <a type="button"  class="btn btn-info btn-sm" href="../../siswa_lihat.php?id=<?php echo $d['id']; ?>">Lihat</a>
           </td>
