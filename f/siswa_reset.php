@@ -19,7 +19,7 @@ if ($_SESSION['status']!="akl" &&
 $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
 $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 
-echo $id;
+// echo $id;
 
 // $id = strip_tags($_GET['id']);
 // $id = $_GET['id'];
