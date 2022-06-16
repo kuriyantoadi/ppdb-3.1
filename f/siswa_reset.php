@@ -19,6 +19,8 @@ if ($_SESSION['status']!="akl" &&
 $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
 $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 
+echo $id;
+
 // $id = strip_tags($_GET['id']);
 // $id = $_GET['id'];
 // $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
@@ -29,6 +31,24 @@ $kode_jur = isset($_GET['kode_jur']) ? abs((int) $_GET['kode_jur']) : 0;
 $data = mysqli_query($koneksi, "SELECT * from tb_siswa where id='$id'");
 while ($d = mysqli_fetch_array($data)) {
 
+  if ('Akuntansi dan Keuangan Lembaga' == $d['kompetensi_keahlian'] ) {
+    $kode_jur = 'akl';
+  }elseif ('Otomatisasi dan Tata Kelola Perkantoran' == $d['kompetensi_keahlian'] ) {
+    $kode_jur = 'otkp';
+  }elseif ('Teknik Komputer dan Jaringan' == $d['kompetensi_keahlian'] ) {
+    $kode_jur = 'tkj';
+  }elseif ('Rekayasa Perangkat Lunak' == $d['kompetensi_keahlian'] ) {
+    $kode_jur = 'rpl';
+  }elseif ('Teknik Kendaraan Ringan Otomotif' == $d['kompetensi_keahlian'] ) {
+    $kode_jur = 'tkr';
+  }elseif ('Teknik Pemesinan' == $d['kompetensi_keahlian'] ) {
+    $kode_jur = 'tpm';
+  }else {
+    echo "Reset Gagal";
+    exit;
+  }
+
+  // echo $d['pdf_kk'];
   //hapus file siswa
   unlink("../assets/file_upload/$kode_jur/$d[pdf_kk]");
   unlink("../assets/file_upload/$kode_jur/$d[pdf_kip]");
@@ -69,5 +89,5 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
            ");
 
 
-    header("location:siswa_lihat.php?id=$id&pesan=reset_berhasil");
+    // header("location:siswa_lihat.php?id=$id&pesan=reset_berhasil");
 }
