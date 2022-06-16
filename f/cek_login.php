@@ -25,6 +25,12 @@ if ($cek > 0) {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "admin";
         header("location:a/index.php");
+
+    } elseif ($login['level']=="super_admin") {
+        $_SESSION['username'] = $username;
+        $_SESSION['status'] = "super_admin";
+        header("location:sua/index.php");
+
     } elseif ($login['level']=="operator") {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "login";
