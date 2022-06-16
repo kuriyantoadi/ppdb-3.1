@@ -89,5 +89,5 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
            ");
 
 
-    // header("location:siswa_lihat.php?id=$id&pesan=reset_berhasil");
+    header("location:siswa_lihat.php?id=$id&pesan=reset_berhasil");
 }
