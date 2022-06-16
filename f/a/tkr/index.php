@@ -112,10 +112,10 @@ include '../header.php';
           <center>
             <?php include('../../tampil-validasi.php'); ?>
         </td>
-        <td>
+        <!-- <td>
           <center>
             <a type="button" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Akuntansi dan Keuangan Lembaga ?')" class="btn btn-danger btn-sm" href="hapus.php?id=<?php echo $d['id']; ?>">Hapus</a>
-        </td>
+        </td> -->
         <td>
           <center>
             <a type="button" class="btn btn-info btn-sm" href="tampil.php?id=<?php echo $d['id']; ?>">Lihat</a>
