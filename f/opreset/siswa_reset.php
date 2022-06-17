@@ -4,7 +4,7 @@ include '../../koneksi.php';
 
 
 session_start();
-if ($_SESSION['status']!="admin") {
+if ($_SESSION['status']!="opreset") {
     header("location:../../index.php?pesan=belum_login");
 } else {
 
@@ -62,6 +62,5 @@ mysqli_query($koneksi, "UPDATE tb_siswa SET
            where id='$id'
            ");
 
-
-    header("location:$kode_jur.php?id=$id&pesan=reset_berhasil");
+    // header("location:tampil_$kode_jur.php?id=$id&pesan=reset_berhasil");
 }

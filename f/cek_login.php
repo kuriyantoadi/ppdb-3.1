@@ -31,6 +31,11 @@ if ($cek > 0) {
         $_SESSION['status'] = "sua";
         header("location:sua/index.php");
 
+    } elseif ($login['level']=="opreset") {
+        $_SESSION['username'] = $username;
+        $_SESSION['status'] = "opreset";
+        header("location:opreset/index.php");
+
     } elseif ($login['level']=="operator") {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "login";

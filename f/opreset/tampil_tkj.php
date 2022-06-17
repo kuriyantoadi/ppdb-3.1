@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="admin") {
+if ($_SESSION['status']!="opreset") {
     header("location:../index.php?pesan=belum_login");
 }
 
@@ -99,13 +99,13 @@ include 'header.php';
           <center>
             <?php include('../tampil-validasi.php'); ?>
         </td>
-        <td>
+        <!-- <td>
           <center>
             <a type="button" onclick="return confirm('Hapus Data Siswa <?= $d['nama_siswa'] ?> ?')" class="btn btn-danger btn-sm" href="siswa_hapus.php?id=<?php echo $d['id']; ?>">Hapus</a>
-        </td>
+        </td> -->
         <td>
           <center>
-            <a type="button" class="btn btn-info btn-sm" href="siswa_lihat.php?id=<?= $d['id']; ?>">Lihat</a>
+            <a style="margin-right: 10px;" type="button" class="btn btn-warning btn-md" href="siswa_reset.php?id=<?= $d['id'] ?>&kode_jur=tkj" onclick="return confirm('Anda yakin Reset data siswa <?php echo $d['nama_siswa']; ?> ?')">Reset Data</a>
         </td>
       </tr>
 
