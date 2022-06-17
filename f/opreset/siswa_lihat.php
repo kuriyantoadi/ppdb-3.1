@@ -1,28 +1,21 @@
 <?php
 session_start();
-if ($_SESSION['status']=="akl") {
-  $kompetensi_keahlian = "Akuntansi dan Keuangan Lembaga";
-  $kode_jur = "akl";
-}elseif ($_SESSION['status']=="otkp") {
-  $kompetensi_keahlian = "Otomatisasi dan Tata Kelola Perkantoran";
-  $kode_jur = "otkp";
-}elseif ($_SESSION['status']=="tkj") {
-  $kompetensi_keahlian = "Teknik Komputer dan Jaringan";
-  $kode_jur = "tkj";
-}elseif ($_SESSION['status']=="rpl") {
-  $kompetensi_keahlian = "Rekayasa Perangkat Lunak";
-  $kode_jur = "rpl";
-}elseif ($_SESSION['status']=="tkr") {
-  $kompetensi_keahlian = "Teknik Kendaraan Ringan";
-  $kode_jur = "tkr";
-}elseif ($_SESSION['status']=="tpm") {
-  $kompetensi_keahlian = "Teknik Pemesinan";
-  $kode_jur = "tpm";
-}else {
+if ($_SESSION['status']!="admin") {
   header("location:index.php?pesan=belum_login");
 }
 
 include 'header.php';
+
+include '../../koneksi.php';
+// $id = $_GET['id'];
+$id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
+// $id = mysql_real_escape_string($_GET['id']);
+
+$data = mysqli_query($koneksi, "select * from tb_siswa where id='$id' ");
+while ($d = mysqli_fetch_array($data)) {
+
+  include 'case_jur.php';
+
 ?>
 
 <div class="container">
@@ -35,29 +28,19 @@ include 'header.php';
           <h2>Tampilan Operator PPDB SMKN 1 Kragilan</h2>
         </center>
         <center>
-          <h3 style="margin-bottom: 50px">Kompetensi Keahlian <?= $kompetensi_keahlian ?></h3>
+          <h3 style="margin-bottom: 50px">Kompetensi Keahlian <?= $d['kompetensi_keahlian'] ?></h3>
         </center>
       </div>
       <div class="col-md-2">
       </div>
     </div>
 
-      <?php
-      include '../koneksi.php';
-      // $id = $_GET['id'];
-      $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
-      // $id = mysql_real_escape_string($_GET['id']);
-
-      $data = mysqli_query($koneksi, "select * from tb_siswa where id='$id' ");
-      while ($d = mysqli_fetch_array($data)) {
-        ?>
 
 
-      <a style="margin-right: 10px;" type="button" class="btn btn-danger btn-md" href="d/<?= $kode_jur ?>/index.php">Kembali</a>
+
+      <a style="margin-right: 10px;" type="button" class="btn btn-danger btn-md" href="tampil_<?= $kode_jur ?>.php">Kembali</a>
       <a style="margin-right: 10px;" type="button" class="btn btn-warning btn-md" href="siswa_reset.php?id=<?= $d['id'] ?>&kode_jur=<?= $kode_jur ?>" onclick="return confirm('Anda yakin Reset data siswa <?php echo $d['nama_siswa']; ?> ?')">Reset Data</a>
-      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../daftar/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
-      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../daftar/tanda-terima.php?nik=<?= $d['nik'] ?>">Cetak Tanda Terima Berkas</a>
-
+      <a style="margin-right: 10px;" type="button" class="btn btn-primary btn-md" href="../../daftar/cetak.php?nik=<?= $d['nik'] ?>">Cetak Bukti Pendaftaran</a>
 
       <h5 style="margin-top: 20px"><b>Informasi :</b></h5>
       <ol>
@@ -69,7 +52,7 @@ include 'header.php';
 
       <button style="margin-bottom: 20px" type="button" value="kondisi1" onclick="block_data_siswa()" class="btn btn-info">Data Pribadi</button>
 
-      <?php include '../alert.php'; ?>
+      <?php include '../../alert.php'; ?>
 
       <div class="panel panel-info" id="block_data_siswa" style="display:none;">
         <div class="panel-heading">
@@ -242,7 +225,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_skhun'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_skhun']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_skhun']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -260,7 +243,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_surat_dokter'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_surat_dokter']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_surat_dokter']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -282,7 +265,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_kk'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kk']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kk']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -301,7 +284,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_akta'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -318,7 +301,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_photo'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_photo']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_photo']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -345,7 +328,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_1'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_1']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -372,7 +355,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_2'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_2']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -398,7 +381,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_3'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_3']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -425,7 +408,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_4'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_4']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -451,7 +434,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_rapor_5'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_rapor_5']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -469,7 +452,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_kip'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kip']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_kip']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -485,7 +468,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_piagam1'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam1']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam1']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -501,7 +484,7 @@ include 'header.php';
                 </td>
                 <td>
                   <?php if (!empty($d['pdf_piagam2'])) { ?>
-                  <embed src="../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam2']; ?>" type="application/pdf" width="100%" height="500px">
+                  <embed src="../../assets/file_upload/<?= $kode_jur ?>/<?= $d['pdf_piagam2']; ?>" type="application/pdf" width="100%" height="500px">
                   <?php  }else{ ?>
                   <h5>File Tidak Ada</h5>
                   <?php } ?>
@@ -535,9 +518,6 @@ include 'header.php';
         </div>
       </div>
 
-
-
-
       <center>
         <select style="margin-top: 25px;  width: 30%;" name="kondisi" class="form-control" required>
           <option value="<?= $d['kondisi']; ?>">Pilih Kondisi <?= $d['kondisi']; ?></option>
@@ -548,8 +528,6 @@ include 'header.php';
         <input style="margin-top: 25px; margin-bottom: 80px;" type="submit" name="submit" value="submit" class="btn btn-success">
         </form>
 
-
-
         <br>
         <?php
       } ?>
@@ -558,7 +536,7 @@ include 'header.php';
   </div>
 </div>
 </body>
-<script src="../assets/js/hidden-block.js"></script>
+<script src="../../assets/js/hidden-block.js"></script>
 <?php
 include 'footer.php';
 

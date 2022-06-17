@@ -5,10 +5,41 @@ include '../koneksi.php';
 // $nisn = isset($_GET['nisn']) ? abs((int) $_GET['nisn']) : 0;
 $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
 
-$data_siswa = mysqli_query($koneksi, "select nama_siswa from tb_siswa where nik='$nik'");
+$data_siswa = mysqli_query($koneksi, "select nama_siswa, kompetensi_keahlian from tb_siswa where nik='$nik'");
 while ($d_siswa = mysqli_fetch_array($data_siswa)) {
 
   $nama_siswa = $d_siswa['nama_siswa'];
+  $kompetensi_keahlian = $d_siswa['kompetensi_keahlian'];
+
+  switch ($kompetensi_keahlian) {
+    case "Akuntansi dan Keuangan Lembaga":
+      $kode_jur = "akl";
+      $kode_jurusan = "01";
+      break;
+    case "Otomatisasi dan Tata Kelola Perkantoran":
+      $kode_jur = "otkp";
+      $kode_jurusan = "02";
+      break;
+    case "Teknik Komputer dan Jaringan":
+      $kode_jur = "tkj";
+      $kode_jurusan = "03";
+      break;
+    case "Rekayasa Perangkat Lunak":
+      $kode_jur = "rpl";
+      $kode_jurusan = "04";
+      break;
+    case "Teknik Kendaraan Ringan Otomotif":
+      $kode_jur = "tkr";
+      $kode_jurusan = "05";
+      break;
+    case "Teknik Pemesinan":
+      $kode_jur = "tpm";
+      $kode_jurusan = "06";
+      break;
+    default:
+      $kode_jur = "00";
+  }
+
 }
 ?>
 <!DOCTYPE html>
@@ -37,6 +68,8 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
           $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
           $data = mysqli_query($koneksi, "select * from tb_siswa where nik='$nik'");
           while ($d = mysqli_fetch_array($data)) {
+
+
               ?>
 
             <table>
@@ -53,9 +86,13 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
                     <td>SEKOLAH ASAL</td>
                     <td>: <?= $d['asal_sekolah'] ?></td>
                 </tr>
+                <tr>
+                    <td>KODE ENKRIPSI</td>
+                    <td>: <?= $d['enk'] ?></td>
+                </tr>
             </table>
 
-        <table class="table table-bordered border-dark">
+        <table class="table table-bordered border-dark" style="margin-top: 30px">
             <thead class="bg-light text-center">
                 <tr>
                     <th>NO</th>
@@ -126,20 +163,22 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
         </table>
 
         <p>Catatan.</p>
-        <table border="2">
+        <table border="1">
           <tr>
-            <td width="500px" height='300px'></td>
+            <td width="700px" height='100px'></td>
           </tr>
         </table>
 
 
-        <table border="1">
+        <table style="margin-top :30px" border="0" align='center'>
           <tr>
             <td rowspan="2">
-              <?= $d['pdf_photo'] ?>
+              <div style="margin-right: 100px; margin-bottom: 0px">
+              </div><center>
+              photo 3x4
             </td>
             <td>
-              <div style="margin-right: 300px; margin-bottom: 0px">
+              <div style="margin-right: 450px; margin-bottom: 0px">
               </div>
             </td>
             <td>
@@ -150,6 +189,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
           <tr>
             <td colspan="3">
               <div style="margin-right: 300px; margin-bottom: 100px">
+              </div>
             </td>
 
           </tr>
@@ -159,12 +199,88 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
             </td>
             <td>
             </td>
-            <td>...........................</td>
+            <td align="center">...........................</td>
           </tr>
         </table>
 
+      <div style="margin-top: 700px">
 
-      <?php } ?>
-    </div>
+      </div>
+
+      <h4 align="center">BUKTI PELAKSANAAN KEGIATAN</h4>
+      <h4 align="center">SELEKSI KOMPETENSI/TES KHUSUS</h4>
+      <h4 align="center">PENERIMAAN PESERTA DIDIK BARU</h4>
+      <h4 align="center">SMK NEGERI 1 KRAGILAN</h4>
+      <h4 align="center">TAHUN AJARAN 2022</h4>
+
+      <table class="table table-bordered" style="margin-bottom: 30px">
+        <tr>
+          <td>Nama Peserta</td>
+          <th>: <?= $d['nama_siswa'] ?></th>
+        </tr>
+        <tr>
+          <td>Nomor Peserta</td>
+          <th>: <?= $d['no_p'] ?></th>
+        </tr>
+        <tr>
+          <td>Kompetensi Keahlian</td>
+          <th>: <?= $d['kompetensi_keahlian'] ?></th>
+        </tr>
+      </table>
+
+      <table class="table table-bordered">
+        <tr>
+          <th><center>NO</th>
+          <th><center>KEGIATAN</th>
+          <th><center>SUDAH</th>
+          <th><center>BELUM</th>
+        </tr>
+        <tr>
+          <td><center>1</td>
+          <td>Test Akademik</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><center>2</td>
+          <td>Pengumpulan Berkas</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><center>3</td>
+          <td>Wawancara</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><center>4</td>
+          <td>Pemeriksaan Tindik</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><center>5</td>
+          <td>Pemeriksaan Tato</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><center>6</td>
+          <td>Pemeriksaan Buta Warna</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><center>7</td>
+          <td>Tinggi Badan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </table>
+
+    <?php } ?>
+
 </body>
 </html>
