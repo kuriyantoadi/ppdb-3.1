@@ -22,7 +22,7 @@ switch ($kompetensi_keahlian) {
     $kode_jur = "rpl";
     $kode_jurusan = "04";
     break;
-  case "Teknik Kendaraan Ringan":
+  case "Teknik Kendaraan Ringan Otomotif":
     $kode_jur = "tkr";
     $kode_jurusan = "05";
     break;
