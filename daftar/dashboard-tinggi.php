@@ -21,11 +21,14 @@ include '../koneksi.php';
 
   <table>
     <tr>
-      <td>
+      <td colspan="2">
         <a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="<?= $kode_jur ?>/logout.php">Keluar</a>
-        <?php if ($d['kondisi'] != "Reset Data") { ?>
+        <?php if ($d['kondisi'] == "Pengecekan") { ?>
         <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
-        <?php } ?>
+      <?php }elseif ($d['kondisi'] == "Siswa Lolos Seleksi") { ?>
+        <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
+        <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="tanda-terima.php?nik=<?= $d['nik']; ?>">Cetak Tanda Terima Berkas</a>
+      <?php } ?>
       </td>
       </td>
       <td>
