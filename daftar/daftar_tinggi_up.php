@@ -453,11 +453,9 @@ if ($_POST['upload']) {
 
 $tgl_pendaftaran = $_POST['tgl_pendfataran'];
 $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
-$asal_sekolah = addslashes($_POST['asal_sekolah']);
-$asal_sekolah = strtoupper($_POST['asal_sekolah']);
+$asal_sekolah = addslashes(strtoupper($_POST['asal_sekolah']));
 $nisn = $_POST['nisn'];
-$nama_siswa = addslashes($_POST['nama_siswa']);
-$nama_siswa = strtoupper($_POST['nama_siswa']);
+$nama_siswa = addslashes(strtoupper($_POST['nama_siswa']));
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $tempat_lahir = $_POST['tempat_lahir'];
 $tgl_lahir = $_POST['tgl_lahir'];
@@ -473,7 +471,7 @@ $alamat = $_POST['alamat'];
 $rt = $_POST['rt'];
 $rw = $_POST['rw'];
 $jarak_kesekolah = $_POST['jarak_kesekolah'];
-$nama_org_tua = addslashes($_POST['nama_org_tua']);
+$nama_org_tua = strtoupper(addslashes($_POST['nama_org_tua']));
 $no_hp_org_tua = $_POST['no_hp_org_tua'];
 $pekerjaan_org_tua = $_POST['pekerjaan_org_tua'];
 $kip = $_POST['kip'];

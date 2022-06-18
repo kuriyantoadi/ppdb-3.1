@@ -404,11 +404,11 @@ if ($_POST['upload']) {
 
 $id = $_POST['id'];
 // $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
-$asal_sekolah = addslashes($_POST['asal_sekolah']);
-$asal_sekolah = strtoupper($_POST['asal_sekolah']);
+$asal_sekolah = strtoupper(addslashes($_POST['asal_sekolah']));
+// $asal_sekolah = strtoupper($_POST['asal_sekolah']);
 $nisn = $_POST['nisn'];
-$nama_siswa = addslashes($_POST['nama_siswa']);
-$nama_siswa = strtoupper($_POST['nama_siswa']);
+// $nama_siswa = addslashes($_POST['nama_siswa']);
+$nama_siswa = strtoupper(addslashes($_POST['nama_siswa']));
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $tempat_lahir = $_POST['tempat_lahir'];
 $tgl_lahir = $_POST['tgl_lahir'];
