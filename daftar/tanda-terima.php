@@ -281,6 +281,9 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
       </table>
 
     <?php } ?>
+    <script>
+        window.print();
+    </script>
 
 </body>
 </html>
