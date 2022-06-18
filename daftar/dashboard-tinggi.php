@@ -40,6 +40,9 @@ include '../koneksi.php';
         <h4><strong>Info dari operator : </strong></h4>
       </td>
       <td>
+        <div class="alert alert-danger" role="alert">
+          <b>Tanda Terima berkas di Print 2 rangkap, 1 rangkap untuk Operator dan satu lagi untuk peserta</b>
+        </div>
         <?php if ($d['catatan_operator'] == '') { ?>
         <h4 style="margin-left: 10px">Tidak ada informasi</h4>
         <?php }else{ ?>
