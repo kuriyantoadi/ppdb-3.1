@@ -19,7 +19,7 @@ include '../koneksi.php';
 
   <?php include '../alert.php'; ?>
   <div class="alert alert-danger" role="alert">
-    <b>Tanda Terima berkas di Print 2 rangkap, 1 Panitia untuk Operator dan satu lagi untuk peserta</b>
+    <b>Jika tombol Tanda Terima Berkas tidak muncul mode print, bisa tekan CTRL + P agar muncul mode Print (wajib di Komputer/Lapotp)</b>
   </div>
   <table border="0">
     <tr>
