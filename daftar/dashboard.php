@@ -18,7 +18,9 @@ include '../koneksi.php';
       ?>
 
   <?php include '../alert.php'; ?>
-
+  <div class="alert alert-danger" role="alert">
+    <b>Tanda Terima berkas di Print 2 rangkap, 1 Panitia untuk Operator dan satu lagi untuk peserta</b>
+  </div>
   <table border="0">
     <tr>
       <td colspan="2">
@@ -42,9 +44,7 @@ include '../koneksi.php';
 
       </td>
       <td>
-        <div class="alert alert-danger" role="alert">
-          <b>Tanda Terima berkas di Print 2 rangkap, 1 rangkap untuk Operator dan satu lagi untuk peserta</b>
-        </div>
+
         <?php if ($d['catatan_operator'] == '') { ?>
         <h4 style="margin-left: 10px">Tidak ada informasi</h4>
         <?php }else{ ?>
