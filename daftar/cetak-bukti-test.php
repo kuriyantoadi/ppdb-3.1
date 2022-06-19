@@ -284,8 +284,6 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
 
       </div>
 
-</div>
-
       <div style="max-width: 1000px; margin: auto;">
           <h5 class="text-center my-5">
               TANDA TERIMA BERKAS PENDAFTARAN DAN VALIDASI <br>
@@ -501,7 +499,7 @@ while ($d_siswa = mysqli_fetch_array($data_siswa)) {
           </tr>
 
         </table>
-      </div>
+
     <?php } ?>
     <script>
         window.print();
