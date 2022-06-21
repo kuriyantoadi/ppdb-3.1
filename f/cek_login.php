@@ -26,15 +26,26 @@ if ($cek > 0) {
         $_SESSION['status'] = "admin";
         header("location:a/index.php");
 
-    } elseif ($login['level']=="sua") {
-        $_SESSION['username'] = $username;
-        $_SESSION['status'] = "sua";
-        header("location:sua/index.php");
+    // } elseif ($login['level']=="sua") {
+    //     $_SESSION['username'] = $username;
+    //     $_SESSION['status'] = "sua";
+    //     header("location:sua/index.php");
 
-    } elseif ($login['level']=="opreset") {
+
+    } elseif ($login['level']=="optest") {
         $_SESSION['username'] = $username;
-        $_SESSION['status'] = "opreset";
-        header("location:opreset/index.php");
+        $_SESSION['status'] = "optest";
+        header("location:optest/index.php");
+
+    } elseif ($login['level']=="opwawancara") {
+        $_SESSION['username'] = $username;
+        $_SESSION['status'] = "opwawancara";
+        header("location:opwawancara/index.php");
+
+    // } elseif ($login['level']=="opreset") {
+    //     $_SESSION['username'] = $username;
+    //     $_SESSION['status'] = "opreset";
+    //     header("location:opreset/index.php");
 
     } elseif ($login['level']=="operator") {
         $_SESSION['username'] = $username;

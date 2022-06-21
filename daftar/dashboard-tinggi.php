@@ -43,7 +43,6 @@ include '../koneksi.php';
         <h4><strong>Info dari operator : </strong></h4>
       </td>
       <td>
-
         <?php if ($d['catatan_operator'] == '') { ?>
         <h4 style="margin-left: 10px">Tidak ada informasi</h4>
         <?php }else{ ?>
@@ -52,7 +51,71 @@ include '../koneksi.php';
       </td>
     </tr>
 
+
+
   </table>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Status Pendaftaran</h3>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered">
+        <tr>
+          <th width='250px'>Pendaftaran</th>
+          <td>
+            <?php include('../f/tampil-validasi.php'); ?>
+          </td>
+        </tr>
+
+        <?php
+        $data_seleksi = mysqli_query($koneksi, "select * from tb_seleksi where nik='$nik'");
+        while ($d_seleksi = mysqli_fetch_array($data_seleksi)) {
+          ?>
+        <tr>
+          <th>Wawancara</th>
+          <td>
+
+            <?php
+            $t_wawancara = $d_seleksi['test_wawancara'];
+            if ($t_wawancara == "") {
+              echo "<span style='margin-right: 5px;' class='label label-danger'>Belum Wawancara</span>";
+            }elseif ($t_wawancara == "Selesai") {
+              echo "<span style='margin-right: 5px;' class='label label-success'>Selesai Wawancara</span>";
+            }else {
+              echo "<br><span style='margin-right: 5px;' class='label label-danger'>ERROR</span>";
+            }
+
+             ?>
+          </td>
+        </tr>
+        <tr>
+          <th>Test Uji Kompetensi</th>
+          <td>
+            <?php
+            $t_ujikom = $d_seleksi['test_ujikom'];
+            if ($t_ujikom == "") {
+              echo "<span style='margin-right: 5px;' class='label label-danger'>Belum Uji Kompetensi</span>";
+            }elseif ($t_ujikom == "Selesai") {
+              echo "<span style='margin-right: 5px;' class='label label-success'>Selesai Uji Kompetensi</span>";
+            }else {
+              echo "<span style='margin-right: 5px;' class='label label-danger'>ERROR</span>";
+            }
+
+             ?>
+          </td>
+        </tr>
+        <?php } ?>
+
+        <tr>
+          <th>Catatan Operator</th>
+          <td>
+            <h4 style="margin-left: 10px"><?= $d['catatan_operator']; ?></h4>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
 
       <?php
         //validasi jika Reset Data kosong

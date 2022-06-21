@@ -1,24 +1,4 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Status Pendaftaran</h3>
-  </div>
-  <div class="panel-body">
-    <table class="table table-bordered">
-      <tr>
-        <th width='250px'>Pendaftaran</th>
-        <td>
-          <?php include('../f/tampil-validasi.php'); ?>
-        </td>
-      </tr>
-      <tr>
-        <th>Catatan Operator</th>
-        <td>
-          <h4 style="margin-left: 10px"><?= $d['catatan_operator']; ?></h4>
-        </td>
-      </tr>
-    </table>
-  </div>
-</div>
+
 
 <div class="panel panel-primary">
   <div class="panel-heading">
