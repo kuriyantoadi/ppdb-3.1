@@ -72,12 +72,14 @@ while ($d = mysqli_fetch_array($data)) {
 
               <?php
               $t_lolos = $d_seleksi['status'];
-              if ($t_lolos == "") {
-                echo "<span style='margin-right: 5px;' class='label label-danger'>Belum Dikonfirmasi Panitia</span>";
+              if ($t_lolos == "Tidak Lolos") {
+                echo "<span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
+                echo "<br>Terimasih atas perjuangan mengikuti pendaftaran di SMK Negeri 1 Kragilan, semoga diterima sekolah yang terbaik :)";
+                echo "<br><b>Tetap Semangat, perjalan masih panjang :)<b>";
               } elseif ($t_lolos == "diterima") {
                 echo "<span style='margin-right: 5px;' class='label label-success'>Selamat Anda Diterima di SMKN 1 Kragilan</span>";
               } else {
-                echo "<br><span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
+                echo "<span style='margin-right: 5px;' class='label label-default'>Belum Dikonfirmasi Panitia</span>";
               }
 
               ?>
