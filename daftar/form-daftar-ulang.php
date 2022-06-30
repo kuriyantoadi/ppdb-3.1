@@ -41,7 +41,7 @@
 <tr>
     <th>Pakta Integritas</th>
     <td>
-        <a href="" type="button" class="btn btn-primary btn-sm">
+        <a href="cetak_pakta_integritas_siswa.php?nik=<?= $d['nik'] ?>" type="button" class="btn btn-primary btn-sm">
             <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak
         </a>
     </td>
