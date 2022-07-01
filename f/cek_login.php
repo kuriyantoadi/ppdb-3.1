@@ -41,6 +41,12 @@ if ($cek > 0) {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "opwawancara";
         header("location:opwawancara/index.php");
+    
+
+    } elseif ($login['level'] == "admin-du") {
+        $_SESSION['username'] = $username;
+        $_SESSION['status'] = "admin-du";
+        header("location:du/index.php");
 
     // } elseif ($login['level']=="opreset") {
     //     $_SESSION['username'] = $username;

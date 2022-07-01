@@ -69,7 +69,7 @@
 
                 <div class="col-8 m-auto mb-5">
 
-                    <?php if ($d['status'] == "diterima") { ?>
+                    <?php if ($d['status'] == "Diterima") { ?>
 
                         <table class="table table-bordered border-dark">
                             <tr>
@@ -81,7 +81,7 @@
                             </tr>
                         </table>
 
-                    <?php } elseif ($d['status'] == "tidak diterima") { ?>
+                    <?php } elseif ($d['status'] == "Tidak Diterima") { ?>
 
                         <table class="table table-bordered border-dark">
                             <tr>

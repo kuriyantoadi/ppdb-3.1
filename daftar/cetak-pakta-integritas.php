@@ -33,7 +33,7 @@ while ($d = mysqli_fetch_array($data)) {
                 </h4>
 
                 <p>Yang bertanda tangan dibawah ini:</p>
-                <table class="table mb-5">
+                <table class="table table-bordered mb-5">
                     <tr>
                         <td class="text-center">1.</td>
                         <td>Nama Lengkap</td>
@@ -51,8 +51,8 @@ while ($d = mysqli_fetch_array($data)) {
                     </tr>
                     <tr>
                         <td rowspan="6" class="text-center">4.</td>
-                        <td>Alamat Rumah</td>
-                        <td></td>
+                        <td colspan="2">Alamat Rumah</td>
+                        <!-- <td></td> -->
                     </tr>
                     <tr>
                         <td>a. Kampung/Jalan</td>
@@ -137,6 +137,7 @@ while ($d = mysqli_fetch_array($data)) {
             <?php } ?>
             </div>
         </div>
+        
         <script>
             window.print();
         </script>

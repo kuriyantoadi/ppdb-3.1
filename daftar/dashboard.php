@@ -28,9 +28,9 @@ while ($d = mysqli_fetch_array($data)) {
         <?php if ($d['kondisi'] == "Pengecekan") { ?>
           <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
         <?php } elseif ($d['kondisi'] == "Siswa Lolos Seleksi") { ?>
-          <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
+          <!-- <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
           <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="tanda-terima.php?nik=<?= $d['nik']; ?>">Cetak Tanda Terima Berkas</a>
-        <?php } ?>
+        <?php } ?> -->
       </td>
       </td>
       <td>
@@ -72,11 +72,11 @@ while ($d = mysqli_fetch_array($data)) {
 
               <?php
               $t_lolos = $d_seleksi['status'];
-              if ($t_lolos == "Tidak Lolos") {
+              if ($t_lolos == "Tidak Diterima") {
                 echo "<span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
                 echo "<br>Terimasih atas perjuangan mengikuti pendaftaran di SMK Negeri 1 Kragilan, semoga diterima sekolah yang terbaik :)";
                 echo "<br><b>Tetap Semangat, perjalan masih panjang :)<b>";
-              } elseif ($t_lolos == "diterima") {
+              } elseif ($t_lolos == "Diterima") {
                 echo "<span style='margin-right: 5px;' class='label label-success'>Selamat Anda Diterima di SMKN 1 Kragilan</span>";
               } else {
                 echo "<span style='margin-right: 5px;' class='label label-default'>Belum Dikonfirmasi Panitia</span>";
@@ -85,8 +85,16 @@ while ($d = mysqli_fetch_array($data)) {
               ?>
             </td>
           </tr>
+          <tr>
+            <th>Cetak Hasil Seleksi</th>
+            <th>
+              <a href="cetak-hasil-pengumuman.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak
+              </a>
+            </th>
+          </tr>
           <?php
-          if ($t_lolos == "diterima") {
+          if ($t_lolos == "Diterima") {
             include('form-daftar-ulang.php');
           }
           ?>
