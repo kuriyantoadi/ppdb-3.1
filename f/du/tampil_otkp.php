@@ -23,7 +23,7 @@
     <thead>
       <tr>
         <th>
-          <center>No
+          <center>No 1
         </th>
         <th>
           <center>NISN Siswa
@@ -79,7 +79,7 @@
             <center><?php echo $d['nama_siswa']; ?>
           </td>
           <td>
-            <center><?php echo $d['kompetensi_keahlian']; ?>
+            <center><?php echo $d['diterima_kompetensi_keahlian']; ?>
           </td>
           <td>
             <center><?php echo $d['asal_sekolah']; ?>

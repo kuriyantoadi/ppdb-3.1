@@ -32,9 +32,8 @@
 				<h1>4<span></span>4</h1>
 			</div>
 			<h2>Oops! Page Not Be Found</h2>
-			<h2>Mohon Maaf Pendaftaran Sudah Ditutup</h2>
-			<p>Tetap Semangat walau pun tidak bisa daftar di SMK Negeri 1 Kragilan</p>
-			<a href="https://ppdb.smkn1kragilan.sch.id">Kembali ke Web PPDB SMK Negeri 1 Kragilan</a>
+			<h2>Web Dalam Pengembangan</h2>
+			<a href="https://ppdb2022.smkn1kragilan.sch.id">Kembali ke Web PPDB SMK Negeri 1 Kragilan</a>
 		</div>
 	</div>
 

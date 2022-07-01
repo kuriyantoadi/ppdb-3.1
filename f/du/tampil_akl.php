@@ -10,7 +10,7 @@
     <?php include '../../alert.php' ?>
     <div class="col-sm-7">
       <?php include 'menu.php' ?>
-    
+
     </div>
     <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
     <div class="col-sm-3">
@@ -79,14 +79,15 @@
             <center><?php echo $d['nama_siswa']; ?>
           </td>
           <td>
-            <center><?php echo $d['kompetensi_keahlian']; ?>
+            <center><?php echo $d['diterima_kompetensi_keahlian']; ?>
           </td>
           <td>
             <center><?php echo $d['asal_sekolah']; ?>
           </td>
           <td>
             <center>
-            <?php include('tampil-status.php'); ?> </td>
+              <?php include('tampil-status.php'); ?>
+          </td>
           <td>
             <center>
               <?php include('tampil-daftar-ulang.php'); ?>

@@ -54,11 +54,11 @@
       $halperpage = 500;
       $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
       $mulai = ($page > 1) ? ($page * $halperpage) - $halperpage : 0;
-      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' ORDER BY tb_lolos.status ASC ");
+      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Teknik Kendaraan Ringan dan Otomotif' ORDER BY tb_lolos.status ASC ");
       $total = mysqli_num_rows($result);
       $pages = ceil($total / $halperpage);
 
-      $data = mysqli_query($koneksi, "SELECT * from tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' LIMIT $mulai, $halperpage ");
+      $data = mysqli_query($koneksi, "SELECT * from tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Teknik Kendaraan Ringan dan Otomotif' LIMIT $mulai, $halperpage ");
       $no = $mulai + 1;
 
 
@@ -79,7 +79,7 @@
             <center><?php echo $d['nama_siswa']; ?>
           </td>
           <td>
-            <center><?php echo $d['kompetensi_keahlian']; ?>
+            <center><?php echo $d['diterima_kompetensi_keahlian']; ?>
           </td>
           <td>
             <center><?php echo $d['asal_sekolah']; ?>
