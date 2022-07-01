@@ -1,23 +1,16 @@
-<?php
-session_start();
-if ($_SESSION['status']!="opwawancara") {
-    header("location:../index.php?pesan=belum_login");
-}
-
-include 'header.php';
-    ?>
+<?php include 'header.php'; ?>
 
 <div class="container">
   <center>
-    <h3>Tampilan Admin PPDB SMKN 1 Kragilan</h3>
-    <h3 style="margin-bottom: 50px">Teknik Kendaraan Ringan</h3>
+    <h3>Tampilan Admin Daftar Ulang PPDB SMKN 1 Kragilan</h3>
+    <h3 style="margin-bottom: 50px">Akuntansi dan Keuangan Lembaga</h3>
   </center>
 
   <div class="form-group">
     <?php include '../../alert.php' ?>
     <div class="col-sm-7">
       <?php include 'menu.php' ?>
-      <!-- <a href="../e/tkr/tkr-lap.php" type="button" class="btn btn-success" onclick="return confirm('Download Data PPDB Kompetensi Keahlian Teknik Kendaraan Ringan ?')">Download TKR</a> -->
+
     </div>
     <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
     <div class="col-sm-3">
@@ -32,10 +25,6 @@ include 'header.php';
         <th>
           <center>No
         </th>
-
-        <th>
-          <center>Tanggal Pendaftaran
-        </th>
         <th>
           <center>NISN Siswa
         </th>
@@ -47,6 +36,9 @@ include 'header.php';
         </th>
         <th>
           <center>Asal Sekolah
+        </th>
+        <th>
+          <center>Hasil Seleksi
         </th>
         <th>
           <center>Kondisi
@@ -61,69 +53,64 @@ include 'header.php';
       include '../../koneksi.php';
       $halperpage = 500;
       $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
-      $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
-      $result = mysqli_query($koneksi, "SELECT * FROM tb_seleksi where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif'");
+      $mulai = ($page > 1) ? ($page * $halperpage) - $halperpage : 0;
+      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' ORDER BY tb_lolos.status ASC ");
       $total = mysqli_num_rows($result);
-      $pages = ceil($total/$halperpage);
+      $pages = ceil($total / $halperpage);
 
-      $data = mysqli_query($koneksi, "SELECT * from tb_seleksi where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' LIMIT $mulai, $halperpage ");
-      $no = $mulai+1;
+      $data = mysqli_query($koneksi, "SELECT * from tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' LIMIT $mulai, $halperpage ");
+      $no = $mulai + 1;
 
 
-    while ($d = mysqli_fetch_array($data)) {
-        ?>
+      while ($d = mysqli_fetch_array($data)) {
+      ?>
 
-      <tr>
-        <td>
-          <center><?php echo $no++ ?>
-        </td>
-        <!-- <td>
+        <tr>
+          <td>
+            <center><?php echo $no++ ?>
+          </td>
+          <!-- <td>
             <center><?php echo $d['no_p']; ?>
           </td> -->
-        <td>
-          <center><?php echo $d['tgl_pendaftaran']; ?>
-        </td>
-        <td>
-          <center><?php echo $d['nisn']; ?>
-        </td>
-        <td>
-          <center><?php echo $d['nama_siswa']; ?>
-        </td>
-        <td>
-          <center><?php echo $d['kompetensi_keahlian']; ?>
-        </td>
-        <td>
-          <center><?php echo $d['asal_sekolah']; ?>
-        </td>
-        <td>
-          <center>
-            <?php include('tampil-validasi.php'); ?>
-        </td>
-        <!-- <td>
-          <center>
-            <a type="button" onclick="return confirm('Hapus Data Siswa <?= $d['nama_siswa'] ?> ?')" class="btn btn-danger btn-sm" href="siswa_hapus.php?id=<?php echo $d['id']; ?>">Hapus</a>
-        </td> -->
-        <td>
-          <center>
-            <a style="margin: 5px;" type="button" class="btn btn-success btn-sm" href="val_wawancara_selesai.php?id=<?= $d['id'] ?>&kode_jur=tkr"
-              onclick="return confirm('Anda yakin Selesai Uji Kompetensi data siswa <?php echo $d['nama_siswa']; ?> ?')">Selesai</a>
-            <a style="margin: 5px;" type="button" class="btn btn-warning btn-sm" href="val_wawancara_belum.php?id=<?= $d['id'] ?>&kode_jur=tkr"
-              onclick="return confirm('Anda yakin Belum Selesai Uji Kompetensi data siswa <?php echo $d['nama_siswa']; ?> ?')">Belum</a>
-        </td>
-      </tr>
+          <td>
+            <center><?php echo $d['nisn']; ?>
+          </td>
+          <td>
+            <center><?php echo $d['nama_siswa']; ?>
+          </td>
+          <td>
+            <center><?php echo $d['kompetensi_keahlian']; ?>
+          </td>
+          <td>
+            <center><?php echo $d['asal_sekolah']; ?>
+          </td>
+          <td>
+            <center>
+              <?php include('tampil-status.php'); ?>
+          </td>
+          <td>
+            <center>
+              <?php include('tampil-daftar-ulang.php'); ?>
+          </td>
+
+          <td>
+            <center>
+              <a type="button" class="btn btn-primary btn-sm" href="tampil_siswa.php?id=<?= $d['id'] ?>&kode_jur=akl">Lihat</a>
+          </td>
+        </tr>
 
       <?php
-    } ?>
+      } ?>
     </tbody>
   </table>
   <div>
-    <?php for ($i=1; $i<=$pages ; $i++) {
-        ?>
-    <a class="btn btn-info btn-md" href="?halaman=<?php echo $i; ?>"><?php echo $i; ?></a>
+    <?php for ($i = 1; $i <= $pages; $i++) {
+    ?>
+      <a class="btn btn-info btn-md" href="?halaman=<?php echo $i; ?>"><?php echo $i; ?></a>
     <?php
     } // database
 
-  ?>
+    ?>
   </div>
 </div>
 <?php include 'footer.php' ?>
