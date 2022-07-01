@@ -76,7 +76,7 @@ while ($d = mysqli_fetch_array($data)) {
               } elseif ($t_lolos == "diterima") {
                 echo "<span style='margin-right: 5px;' class='label label-success'>Selamat Anda Diterima di SMKN 1 Kragilan</span>";
               } else {
-                echo "<br><span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
+                echo "<span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
               }
 
               ?>
