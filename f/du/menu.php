@@ -1,4 +1,5 @@
     <a href="../logout.php" type="button" class="btn btn-danger" role="button">Logout</a>
+    <a href="tampil_semua.php" type="button" class="btn btn-success" role="button">Semua</a>
     <a href="tampil_tkj.php" type="button" class="btn btn-primary" role="button">TKJ</a>
     <a href="tampil_rpl.php" type="button" class="btn btn-primary" role="button">RPL</a>
     <a href="tampil_akl.php" type="button" class="btn btn-primary" role="button">AKL</a>

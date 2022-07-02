@@ -27,9 +27,6 @@ include 'header.php';
             <a style="margin-right: 10px;" href="tampil_edit.php?id=<?= $id ?>" type="button" class="btn btn-default btn">
                 <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit Data
             </a>
-          
-
-
 
             <br> <br>
             <a href="../../daftar/cetak-hasil-pengumuman.php?nik=<?= $d['nik'] ?>" type="button" class="btn btn-primary btn">
@@ -47,7 +44,7 @@ include 'header.php';
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Formulir Dapodik
             </a>
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-hover">
                 <tr>
                     <td>Nomor Pendaftaran</td>
                     <td><?php echo $d['no_p']; ?></td>
@@ -59,13 +56,22 @@ include 'header.php';
                     </td>
                 </tr>
                 <tr>
-                    <td>Nama Calon Peserta Didik</td>
-                    <td><?php echo $d['nama_siswa']; ?></td>
+                    <th>Nama Calon Peserta Didik</th>
+                    <th><?php echo $d['nama_siswa']; ?></th>
                 </tr>
                 <tr>
-                    <td>Kompetensi Keahlian</td>
-                    <td><?php echo $d['diterima_kompetensi_keahlian']; ?></td>
+                    <th>Diterima di Kompetensi Keahlian</th>
+                    <th><?php echo $d['diterima_kompetensi_keahlian']; ?></th>
                 </tr>
+                <tr>
+                    <th>Kompetensi Keahlian Pilihan 1</th>
+                    <th><?php echo $d['kompetensi_keahlian']; ?></th>
+                </tr>
+                <tr>
+                    <td>Kompetensi Keahlian Pilihan 2</td>
+                    <td><?php echo $d['kompetensi_keahlian_2']; ?></td>
+                </tr>
+
                 <tr>
                     <td>Nama Asal Sekolah</td>
                     <td><?php echo $d['asal_sekolah']; ?></td>
@@ -75,7 +81,6 @@ include 'header.php';
                     <td>NISN</td>
                     <td><?php echo $d['nisn']; ?></td>
                 </tr>
-
 
                 <tr>
                     <td>Nomor HP</td>
