@@ -1,8 +1,8 @@
 <?php
-session_start();
-if ($_SESSION['status'] != "admin" && $_SESSION['status'] != "siswa") {
-  header("location:https://smkn1kragilan.sch.id/0/ppdb-v3/404/");
-}
+// session_start();
+// if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa") {
+//     header("location:https://smkn1kragilan.sch.id/0/ppdb2021/pengumuman/");
+// }
 
 ?>
 
@@ -33,7 +33,7 @@ if ($_SESSION['status'] != "admin" && $_SESSION['status'] != "siswa") {
       <div class="fadeIn first">
         <?php include '../../alert-login.php'; ?>
 
-        <h4 style="margin-top:  40px;">Login PPDB SMK Negeri 1 Kragilan</h5>
+          <h4 style="margin-top:  40px;">Login PPDB SMK Negeri 1 Kragilan</h5>
           <h4 style="margin-bottom: 40px;">Komptensi Keahlian Teknik Kendaraan Ringan Otomotif</h5>
 
       </div>
@@ -43,7 +43,7 @@ if ($_SESSION['status'] != "admin" && $_SESSION['status'] != "siswa") {
       <form method="post" action="cek_login.php">
         <input type="text" id="login" class="fadeIn second" name="nisn" placeholder="NISN">
         <input type="text" id="password" class="fadeIn third" name="nik" placeholder="NIK">
-        <input type="submit" class="fadeIn fourth">
+        <input type="submit" class="fadeIn fourth" >
       </form>
 
       <!-- Remind Passowrd -->

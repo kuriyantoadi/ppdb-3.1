@@ -37,7 +37,7 @@ include '../header-daftar.php';
     <?php include '../../alert.php' ?>
 
     <!-- <form class="form-horizontal" action="update-siswa.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()"> -->
-      <!-- <form class="form-horizontal" action="../daftar_up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()"> -->
+      <form class="form-horizontal" action="../daftar_up.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
@@ -74,7 +74,7 @@ include '../header-daftar.php';
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" name="upload" value="upload" class="btn btn-default">Submit</button>
+          <!-- <button type="submit" name="upload" value="upload" class="btn btn-default">Submit</button> -->
         </div>
       </div>
     </form>

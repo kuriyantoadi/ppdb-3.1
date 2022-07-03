@@ -24,7 +24,7 @@ include '../header-daftar.php';
             <h5><b>Tahun Ajaran 2022/2023</b></h4>
           </center>
           <center>
-            <h4><b>Program Studi Rekayasa Perangkat Lunak</b></h4>
+            <h4><b>Program Studi Teknik Komputer dan Jaringan</b></h4>
           </center><br>
           <!-- font ganti jenis -->
         </div>
@@ -48,7 +48,7 @@ include '../header-daftar.php';
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Kompetensi Keahlian :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" name="kompetensi_keahlian" value="Rekayasa Perangkat Lunak" readonly>
+          <input type="text" class="form-control" name="kompetensi_keahlian" value="Teknik Komputer dan Jaringan" readonly>
         </div>
       </div>
       <div class="form-group">
@@ -59,9 +59,9 @@ include '../header-daftar.php';
             <option value="tidak memilih">Hanya 1 Kompetensi Keahlian</option>
             <option value="Akuntansi dan Keuangan Lembaga">Akuntansi dan Keuangan Lembaga</option>
             <option value="Otomatisasi dan Tata Kelola Perkantoran">Otomatisasi dan Tata Kelola Perkantoran</option>
-            <!-- <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option> -->
+            <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
             <option value="Teknik Kendaraan Ringan Otomotif">Teknik Kendaraan Ringan Otomotif</option>
-            <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
+            <!-- <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option> -->
             <option value="Teknik Pemesinan">Teknik Pemesinan</option>
           </select>
         </div>
@@ -74,7 +74,7 @@ include '../header-daftar.php';
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" name="upload" value="upload" class="btn btn-default">Submit</button>
+          <!-- <button type="submit" name="upload" value="upload" class="btn btn-default">Submit</button> -->
         </div>
       </div>
     </form>

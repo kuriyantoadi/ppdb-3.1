@@ -71,30 +71,19 @@ while ($d = mysqli_fetch_array($data)) {
 
               <?php
               $t_lolos = $d_seleksi['status'];
-              if ($t_lolos == "Tidak Diterima") {
-                echo "<span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
-                echo "<br>Terimasih atas perjuangan mengikuti pendaftaran di SMK Negeri 1 Kragilan, semoga diterima sekolah yang terbaik :)";
-                echo "<br><b>Tetap Semangat, perjalan masih panjang :)<b>";
-                echo "<br><br><b>Jika ingin mengambil berkas yang sudah dikumpulkan diharapkan membawa Hasil Seleksi Tidak Diterima </b>";
-              } elseif ($t_lolos == "Diterima") {
+              if ($t_lolos == "") {
+                echo "<span style='margin-right: 5px;' class='label label-warning'>Belum Dikonfirmasi Panitia</span>";
+              } elseif ($t_lolos == "diterima") {
                 echo "<span style='margin-right: 5px;' class='label label-success'>Selamat Anda Diterima di SMKN 1 Kragilan</span>";
               } else {
-                echo "<span style='margin-right: 5px;' class='label label-default'>Belum Dikonfirmasi Panitia</span>";
+                echo "<br><span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
               }
 
               ?>
             </td>
           </tr>
-          <tr>
-            <th>Cetak Hasil Seleksi</th>
-            <th>
-              <a href="cetak-hasil-seleksi.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
-                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak
-              </a>
-            </th>
-          </tr>
           <?php
-          if ($t_lolos == "Diterima") {
+          if ($t_lolos == "diterima") {
             include('form-daftar-ulang.php');
           }
           ?>

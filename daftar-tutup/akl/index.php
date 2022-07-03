@@ -1,8 +1,8 @@
 <?php
-// session_start();
-// if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa") {
-//     header("location:https://smkn1kragilan.sch.id/0/ppdb2021/pengumuman/");
-// }
+session_start();
+if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa") {
+    header("location:https://smkn1kragilan.sch.id/0/ppdb-v3/404/");
+}
 
 ?>
 
@@ -34,7 +34,7 @@
         <?php include '../../alert-login.php'; ?>
 
           <h4 style="margin-top:  40px;">Login PPDB SMK Negeri 1 Kragilan</h5>
-          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Rekayasa Perangkat Lunak</h5>
+          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Akuntasi dan Keuangan Lembaga</h5>
 
       </div>
 
