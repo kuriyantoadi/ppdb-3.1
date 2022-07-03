@@ -51,7 +51,7 @@
         <tbody>
             <?php
             include '../../koneksi.php';
-            $halperpage = 500;
+            $halperpage = 550;
             $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
             $mulai = ($page > 1) ? ($page * $halperpage) - $halperpage : 0;
             $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND  tb_lolos.status='Diterima' ORDER BY tb_lolos.status ASC ");
