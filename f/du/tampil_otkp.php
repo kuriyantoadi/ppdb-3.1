@@ -23,7 +23,7 @@
     <thead>
       <tr>
         <th>
-          <center>No 1
+          <center>No
         </th>
         <th>
           <center>NISN Siswa
@@ -54,11 +54,11 @@
       $halperpage = 500;
       $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
       $mulai = ($page > 1) ? ($page * $halperpage) - $halperpage : 0;
-      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' ORDER BY tb_lolos.status ASC ");
+      $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' AND  tb_lolos.status='Diterima' ORDER BY tb_lolos.status ASC ");
       $total = mysqli_num_rows($result);
       $pages = ceil($total / $halperpage);
 
-      $data = mysqli_query($koneksi, "SELECT * from tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' LIMIT $mulai, $halperpage ");
+      $data = mysqli_query($koneksi, "SELECT * from tb_siswa, tb_lolos where tb_siswa.nik=tb_lolos.nik AND tb_lolos.diterima_kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' AND  tb_lolos.status='Diterima' LIMIT $mulai, $halperpage ");
       $no = $mulai + 1;
 
 
