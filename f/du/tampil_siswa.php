@@ -36,7 +36,7 @@ include 'header.php';
             <a style="margin-left: 10px;" href="../../daftar/cetak-pakta-integritas.php?nik=<?= $d['nik'] ?>" type="button" class="btn btn-primary btn">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Pakta Integritas
             </a>
-            <a style="margin-left: 10px;" href="" type="button" class="btn btn-primary btn">
+            <a style="margin-left: 10px;" href="../../daftar/cetak-bukti-daftar-ulang.php?nik=<?= $d['nik'] ?>" type="button" class="btn btn-primary btn">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Bukti Daftar Ulang
             </a>
 

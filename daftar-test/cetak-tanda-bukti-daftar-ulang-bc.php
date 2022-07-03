@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +10,21 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 
     <style>
-        .tdd{
-            position: absolute; 
+        .tdd {
+            position: absolute;
             top: -50px;
         }
     </style>
 </head>
+
 <body style="font-family: serif;">
     <div class="container">
         <div class="col-md-8 m-auto">
             <fieldset class="border border-2 border-dark">
                 <div class="text-center mt-3 mb-3">
-                    <img src="banten.png" alt="" width="100" class="img-fluid">
+                    <img src="../assets/file/logo-banten.png" alt="" width="60px" class="img-fluid">
                 </div>
-            
+
                 <h4 class="text-center mb-5">
                     TANDA BUKTI PENYERAHAN BERKAS DAFTAR ULANG <br>
                     PPDB SMK NEGERI 1 KRAGILAN <br>
@@ -33,23 +35,28 @@
                     <table class="table table-borderless">
                         <tr>
                             <td>Tanggal Daftar Ulang</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Nomor Pendaftaran</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Nama Peserta</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Asal Sekolah</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Program Keahlian</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -58,7 +65,7 @@
                         <tr>
                             <td></td>
                             <td width="30%">
-                                Kragilan,   Juli 2022 <br>
+                                Kragilan, Juli 2022 <br>
                                 Ketua PPDB
                             </td>
                         </tr>
@@ -88,9 +95,9 @@
 
             <fieldset class="border border-2 border-dark">
                 <div class="text-center mt-3 mb-3">
-                    <img src="banten.png" alt="" width="100" class="img-fluid">
+                    <img src="../assets/file/logo-banten.png" alt="" width="60px" class="img-fluid">
                 </div>
-            
+
                 <h4 class="text-center mb-5">
                     TANDA BUKTI PENYERAHAN BERKAS DAFTAR ULANG <br>
                     PPDB SMK NEGERI 1 KRAGILAN <br>
@@ -101,23 +108,28 @@
                     <table class="table table-borderless">
                         <tr>
                             <td>Tanggal Daftar Ulang</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Nomor Pendaftaran</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Nama Peserta</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Asal Sekolah</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Program Keahlian</td>
-                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div></td>
+                            <td width="70%">: <div style="border-bottom: 1px dashed;"></div>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -126,7 +138,7 @@
                         <tr>
                             <td></td>
                             <td width="30%">
-                                Kragilan,   Juli 2022 <br>
+                                Kragilan, Juli 2022 <br>
                                 Ketua PPDB
                             </td>
                         </tr>
@@ -155,4 +167,5 @@
         </div>
     </div>
 </body>
+
 </html>

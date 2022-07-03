@@ -89,7 +89,7 @@ while ($d = mysqli_fetch_array($data)) {
           <tr>
             <th>Cetak Hasil Seleksi</th>
             <th>
-              <a href="cetak-hasil-pengumuman.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
+              <a href="cetak-hasil-seleksi.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak
               </a>
             </th>

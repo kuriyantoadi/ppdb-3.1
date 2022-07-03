@@ -22,14 +22,14 @@
     </td>
 </tr>
 
-<tr>
+<!-- <tr>
     <th>Hasil Pengumuman</th>
     <td>
-        <a href="cetak-hasil-pengumuman.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
+        <a href="cetak-hasil-seleksi.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
             <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak
         </a>
     </td>
-</tr>
+</tr> -->
 <tr>
     <th>Formulir Dapodik</th>
     <td>
@@ -49,7 +49,7 @@
 <tr>
     <th>Tanda Terima Berkas Daftar Ulang</th>
     <td>
-        <a href="" type="button" class="btn btn-primary btn-sm">
+        <a href="cetak-tanda-bukti-daftar-ulang.php?nik=<?= $nik ?>" type="button" class="btn btn-primary btn-sm">
             <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak
         </a>
     </td>
