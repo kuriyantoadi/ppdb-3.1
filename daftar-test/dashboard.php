@@ -76,6 +76,7 @@ while ($d = mysqli_fetch_array($data)) {
                 echo "<span style='margin-right: 5px;' class='label label-danger'>Mohon maaf, anda tidak diterima di SMKN 1 Kragilan</span>";
                 echo "<br>Terimasih atas perjuangan mengikuti pendaftaran di SMK Negeri 1 Kragilan, semoga diterima sekolah yang terbaik :)";
                 echo "<br><b>Tetap Semangat, perjalan masih panjang :)<b>";
+                echo "<br><br><b>Jika ingin mengambil berkas yang sudah dikumpulkan diharapkan membawa Hasil Seleksi Tidak Diterima </b>";
               } elseif ($t_lolos == "Diterima") {
                 echo "<span style='margin-right: 5px;' class='label label-success'>Selamat Anda Diterima di SMKN 1 Kragilan</span>";
               } else {

@@ -2,7 +2,7 @@
 
 <div class="container">
     <center>
-        <h3>Tampilan Operator Daftar Ulang PPDB SMKN 1 Kragilan</h3>
+        <h3>Tampilan Admin Daftar Ulang PPDB SMKN 1 Kragilan</h3>
         <h3 style="margin-bottom: 50px">Teknik Komputer dan Jaringan</h3>
     </center>
 

@@ -6,7 +6,7 @@
         if ($t_daftar_ulang == "Selesai") {
             echo "<span style='margin-right: 5px;' class='label label-success'>Daftar Ulang Selesai</span>";
         } else {
-            echo "<span style='margin-right: 5px;' class='label label-danger'>Belum Dilakukan</span>";
+            echo "<span style='margin-right: 5px;' class='label label-danger'>Belum Dilakukan, silahkan cek di Informasi Alur Daftar Ulang</span>";
         }
 
         ?>
