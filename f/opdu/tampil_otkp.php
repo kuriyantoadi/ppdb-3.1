@@ -23,7 +23,7 @@
     <thead>
       <tr>
         <th>
-          <center>No 1
+          <center>No
         </th>
         <th>
           <center>NISN Siswa
