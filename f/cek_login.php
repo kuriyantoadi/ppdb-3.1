@@ -76,10 +76,10 @@ if ($cek > 0) {
     //     $_SESSION['username'] = $username;
     //     $_SESSION['status'] = "otkp";
     //     header("location:d/otkp/index.php");
-    // } elseif ($login['level']=="akl") {
-    //     $_SESSION['username'] = $username;
-    //     $_SESSION['status'] = "akl";
-    //     header("location:d/akl/index.php");
+    } elseif ($login['level']=="akl") {
+        $_SESSION['username'] = $username;
+        $_SESSION['status'] = "akl";
+        header("location:d/akl/index.php");
     // } elseif ($login['level']=="tkr") {
     //     $_SESSION['username'] = $username;
     //     $_SESSION['status'] = "tkr";
