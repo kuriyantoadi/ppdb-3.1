@@ -30,9 +30,7 @@ while ($d = mysqli_fetch_array($data)) {
         <?php } elseif ($d['kondisi'] == "Siswa Lolos Seleksi") { ?>
           <!-- <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak.php?nik=<?= $d['nik']; ?>">Cetak Bukti Pendaftaran</a>
           <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="tanda-terima.php?nik=<?= $d['nik']; ?>">Cetak Tanda Terima Berkas</a>
-        -->
-
-        <?php } ?>
+        <?php } ?> -->
       </td>
       </td>
       <td>
